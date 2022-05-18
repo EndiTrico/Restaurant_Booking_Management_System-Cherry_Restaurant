@@ -30,19 +30,12 @@ nav ul li a{
     margin-left: 40px;
 }
 
-.h3class{
-    font-family: Brush Script MT; 
-    color: ff0068;
-    margin-right: 450px;
-    font-size: 35px;
-}
-
 .slider {
 	overflow: hidden;
     width: 100%;
 }
 
-.slider figure {
+.slider figure .figure_div {
 	position: relative;
 	width: 500%;
 	margin: 0;
@@ -83,4 +76,13 @@ nav ul li a{
 	100% {
 		left: -400%;
 	}
+}
+
+.figure_text1{
+	position: absolute;
+	top: 180px;
+	left: 100px;
+	font-size: 70px;
+	color: snow;
+	text-align: center;
 }
