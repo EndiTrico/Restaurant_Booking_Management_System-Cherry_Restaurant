@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
 	box-sizing: border-box;
-	margin: 0;
+	margin: 0 ;
+	
 }
 
 body {
@@ -115,7 +115,7 @@ nav ul li a {
 	margin-top: 700px;
 }
 
-.container_count {
+.containercount {
 	width: 28vmin;
 	height: 28vmin;
 	display: flex;
