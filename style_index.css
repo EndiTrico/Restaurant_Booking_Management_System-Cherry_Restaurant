@@ -6,21 +6,21 @@
 }
 
 nav {
-	background: snow;
+	background: whitesmoke	;
 	text-align: right;
 	height: 80px;
 }
 
 nav ul li {
 	display: inline-block;
-	padding-top: 17px;
+	padding-top: 30px;
 }
 
 nav ul li a {
 	list-style: none;
 	text-decoration: none;
 	padding-right: 40px;
-	color: black;
+	color: brown;
 	font-weight: bold;
 	font-family: Verdana;
 	font-size: 17px;
@@ -29,7 +29,7 @@ nav ul li a {
 .logo {
 	float: left;
 	width: auto;
-	height: 80px;
+	height: 75px;
 	margin-left: 40px;
 }
 
