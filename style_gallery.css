@@ -58,3 +58,46 @@ li a:visited {
 	height: 75px;
 	margin-left: 40px;
 }
+
+
+
+
+.footer{
+	background-color: #ba3a3a;
+	margin-top: 500px;
+	
+}
+
+.footer ul li{
+	color:white;
+}
+
+.footer_text{
+	font-family: Verdana;
+	color: white;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: -10px;
+	text-align: center;
+}
+
+.footer_text_middle{
+	font-family: Verdana;
+	color: white;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: -10px;
+	text-align: center;
+}
+
+.footer_icons{
+	padding-left: 79px;
+}
+
+.myicons{
+	padding-left: 20px;
+}
+
+.span_icon{
+	font-weight: bold;
+}
