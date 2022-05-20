@@ -4,14 +4,16 @@
 }
 
 body {
-	background-color: #ecffe5;
-	;
+	background-color: whitesmoke !important;
 }
 
 nav {
 	background: whitesmoke;
 	text-align: right;
 	height: 80px;
+	position: fixed;
+	width: 100%;
+	z-index: 20;
 }
 
 nav ul li {
@@ -23,11 +25,10 @@ nav ul li {
 nav ul li a {
 	list-style: none !important;
 	text-decoration: none !important;
-	margin-right: 60px;
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-bottom: 27px;
 	color: brown;
 	font-weight: bold;
 	font-family: Verdana;
@@ -35,12 +36,10 @@ nav ul li a {
 }
 
 li a:hover {
-	background: brown;
+	background: linear-gradient(#e9a092 0%, brown	100%);
 	color: whitesmoke !important;
 	text-decoration: none;
-	box-shadow: 10px 10px 10px 10px peru;
 	z-index: 10;
-
 }
 
 li a:link {
@@ -149,7 +148,7 @@ li a:visited {
 	position: relative;
 	font-size: 16px;
 	border-radius: 0.5em;
-	background-color: whitesmoke;
+	background-color: white;
 	border-bottom: 10px solid brown;
 	border-top: 2px solid brown;
 	border-right: 2px solid brown;
