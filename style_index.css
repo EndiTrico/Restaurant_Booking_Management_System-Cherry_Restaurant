@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: whitesmoke !important;
+	background-color: white !important;
 }
 
 nav {
@@ -118,11 +118,11 @@ li a:visited {
 .figure_text1 {
 	position: absolute;
 	top: 150px;
-	left: 600px;
-	font-size: 45px;
-	color: #421800;
+	left: 630px;
+	font-size: 80px;
+	color: #571111;
 	text-align: center;
-	font-family: Verdana;
+	font-family: "Cookie";
 	font-weight: bold;
 }
 
