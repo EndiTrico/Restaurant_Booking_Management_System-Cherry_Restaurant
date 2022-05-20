@@ -58,3 +58,26 @@ li a:visited {
 	height: 75px;
 	margin-left: 40px;
 }
+
+.contact_text{
+	font-family: Verdana;
+	color:brown;
+	text-align: center;
+	z-index: 5;
+	margin-top: -190px;
+}
+
+.main_photo{
+	z-index: -1;
+}
+
+.main_burgerphoto{
+	z-index: 1;
+	margin-top: -240px;
+	margin-left: 925px;
+}
+
+.location{
+	background-image: url(./Images/Images_Contact/photo3.png);
+	background-size: cover;
+}
