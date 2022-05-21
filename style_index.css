@@ -116,6 +116,12 @@ li a:visited {
 
 }
 
+#carousel1{
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	z-index: -1;
+}
+
 .figure_text1 {
 	position: absolute;
 	top: 150px;
@@ -124,8 +130,14 @@ li a:visited {
 	color: #571111;
 	text-align: center;
 	font-family: "Cookie";
-	font-weight: bold;
+	font-weight: bolder;
+	z-index: 2;
+	color: snow;
+	margin-left: 100px;
+	margin-top: 50px;
 }
+
+
 
 .wrapper {
 	position: absolute;
