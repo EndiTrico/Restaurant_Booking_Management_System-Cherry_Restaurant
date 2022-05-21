@@ -111,8 +111,9 @@ li a:visited {
 	}
 
 	100% {
-		left: -400%;
+		left: 0;
 	}
+
 }
 
 .figure_text1 {
