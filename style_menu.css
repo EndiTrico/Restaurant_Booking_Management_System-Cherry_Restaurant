@@ -76,6 +76,7 @@ li a:visited {
 
 .footer_text{
 	font-family: Verdana;
+	font-size: 20px;
 	color: white;
 	font-weight: bold;
 	margin-top: 20px;
@@ -85,6 +86,7 @@ li a:visited {
 
 .footer_text_middle{
 	font-family: Verdana;
+	font-size: 20px;
 	color: white;
 	font-weight: bold;
 	margin-top: 20px;
@@ -102,4 +104,9 @@ li a:visited {
 
 .span_icon{
 	font-weight: bold;
+}
+
+.contact_text{
+	font-family: Verdana;
+	font-size: 12px;
 }
