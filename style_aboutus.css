@@ -62,12 +62,12 @@ li a:visited {
 .photo{
 	margin-top: 50px;
 	width: 100%;
+    height: 607px;
 }
 
 .footer{
 	background-color: #ba3a3a;
 	margin-top: 500px;
-	
 }
 
 .footer ul li{
@@ -110,3 +110,28 @@ li a:visited {
 	font-family: Verdana;
 	font-size: 12px;
 }
+
+.opening_hours img{
+	margin-top: 50px;
+}
+
+.opening_hours h3{
+	font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: -470px;
+    text-align: center;
+	margin-left: -30px;
+}
+
+.opening_hours p{
+	font-size: 17px;
+    color: white;
+    margin-left: 50px;
+	padding-bottom: 12px;
+}
+
+.lottie{
+	margin-top: 30px;
+}
+
