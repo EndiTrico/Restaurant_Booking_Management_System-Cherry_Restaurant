@@ -16,7 +16,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-
     <title>Cherry Restaurant | About us</title>
 </head>
 
@@ -40,7 +39,7 @@
     </div>
 
     <div class="opening_hours">
-        <div class="container">
+        <div class="container reveal">
             <div class="row">
                 <div class="col-md-6">
                     <div class="lottie">
@@ -63,26 +62,84 @@
                     <p>Saturday..............................................8:00 AM - 12:00 AM</p>
                     <p>Sunday.................................................8:00 AM - 12:00 AM</p>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <div class="opening_hours">
-        <div class="container">
+    <div class="story1">
+        <div class="container reveal">
             <div class="row">
                 <div class="col-md-6">
+                    <h2>Our Story</h2>
+                    <p>A good story begins with “Once upon a time…”
+                        Ours, begins with: “Once upon a time, there was a man with a vision…”
+                        In his vision, Cherry wouldn’t be just another business – but it would be the beginning of
+                        something great; Cherry wouldn’t be just another restaurant – but it would be a place where
+                        people could spend quality time; Cherry wouldn’t be a place where you are simply served – but
+                        a
+                        place where you could feel welcomed and appreciated; to him Cherry wouldn’t be just a brand –
+                        but
+                        something that could truly represent him and his passions.
+                        He knew that he couldn’t give life to his vision alone, so he created a team of people with the
+                        same
+                        passion and drive, and together brought Cherry to life – the restaurants cherished by
+                        hundreds of
+                        people in Tirana.</p>
                 </div>
 
                 <div class="col-md-6">
-                
+                    <img class="story1_img" src="./Images/Images_aboutus/photo1.jpg">
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="story2">
+        <div class="container reveal">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="story2_img" src="./Images/Images_aboutus/photo2.jpg">
+                </div>
 
+                <div class="col-md-6">
+                    <p>
+                        We knew that the way to people’s hearts is only through real, good food. So we started making
+                        our pasta by hand, fresh every morning. Homemade bread is baked in our wood-fired oven every
+                        day. We produce our own extra virgin olive oil, from the finest olives in the Albanian south
+                        coast. Meat, cheeses, salamis, vegetables and every product is hand-picked and of the highest
+                        quality. We perfected the recipes of all the classic pizzas and tested dozens of new ones. We
+                        were the first to introduce in Tirana pizzas with Burrata mozzarella, with Philadelphia and
+                        truffle, with Nutella (to die for), and so many others.
+                        Success didn’t come overnight, but all the hard work was totally worth it. Every praise
+                        motivated us to work even harder; every returning customer was a victory; having all our tables
+                        filled, was a dream come true.</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -92,7 +149,8 @@
                     <ul>
                         <li class="contact_text"><span class="span_icon">Address: </span>"Abdyl Frashëri"</li>
                         <li class="contact_text"><span class="span_icon">Phone number: </span>+355 69 57 12 565</li>
-                        <li class="contact_text"><span class="span_icon">Email: </span>cherryrestaurant_vila@gmail.com</li>
+                        <li class="contact_text"><span class="span_icon">Email: </span>cherryrestaurant_vila@gmail.com
+                        </li>
                     </ul>
 
                 </div>
