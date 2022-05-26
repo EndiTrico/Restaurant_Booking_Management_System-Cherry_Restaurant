@@ -72,7 +72,7 @@ li a:visited {
 	color: brown;
 	text-align: center;
 	z-index: 5;
-margin-top: -277px;
+	margin-top: -277px;
     margin-bottom: 223px;
 }
 
@@ -147,4 +147,65 @@ margin-top: -277px;
 	margin-top: 30px;
 }
 
+.story1{
+	background-image: url(./Images/Images_aboutus/photo4.jpg);
+	margin-top: 200px;
+	height: 350px;
+}
 
+.story1 h2{
+	margin-top: 30px;
+	font-size: 30px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+
+.story1 p{
+	font-size: medium;
+	color: black;
+	text-align: justify;
+    margin-left: -30px;
+}
+
+.story1_img{
+	width: 78%;
+    height: 470px;
+    margin-top: -65px;
+    margin-left: 73px;
+}
+
+.story2{
+	background-image: url(./Images/Images_aboutus/photo4.jpg);
+	margin-top: 200px;
+	height: 350px;
+	margin-bottom: -300px;
+}
+
+.story2 p{
+	font-size: medium;
+	color: black;
+	text-align: justify;
+    margin-left: -30px;
+	margin-top: 40px;
+}
+
+.story2_img{
+	width: 78%;
+    height: 470px;
+    margin-top: -65px;
+    margin-left: 1px;
+}
+
+.reveal{
+	position: relative;
+	transform: translateY(150px);
+	opacity: 0;
+	transition: all 2s ease;
+  }
+  
+  .reveal.active{
+	transform: translateY(0px);
+	opacity: 1;
+  }
+		
