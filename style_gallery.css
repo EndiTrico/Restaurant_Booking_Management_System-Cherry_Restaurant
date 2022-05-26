@@ -108,3 +108,54 @@ li a:visited {
 	font-family: Verdana;
 	font-size: 12px;
 }
+
+.gallery_text {
+	font-family: Verdana;
+	font-weight: bold;
+	color: brown;
+	text-align: center;
+	z-index: 5;
+	margin-top: -190px;
+}
+
+.main_photo {
+	z-index: -1;
+	width: 100%;
+	height: 350;
+}
+
+.main_photo2 {
+	z-index: 1;
+	width: 100%;
+	height: 270px;
+	margin-top: -270px;
+}
+
+.gallery_photos {
+	width: 100%;
+	height: 260px;
+}
+
+.first_row{
+	margin-top: 250px;
+}
+
+.second_row{
+	margin-top: 30px;
+}
+
+.third_row{
+	margin-top: 30px;
+}
+
+.fourth_row{
+	margin-top: 30px;
+}
+
+.fifth_row{
+	margin-top: 30px;
+}
+
+.sixth_row{
+	margin-top: 30px;
+}
