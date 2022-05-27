@@ -146,3 +146,8 @@ li a:visited {
 	margin-bottom: -500px;
 	background-image: url("./Images/Images_aboutus/photo4.jpg");
 }
+
+.text-muted{
+	font-weight: bold;
+	font-size: 15px;
+}
