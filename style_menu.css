@@ -133,7 +133,7 @@ li a:visited {
 	margin-right: 50px !important;
     margin-bottom: 0 !important;
     margin-left: 80px !important;
-    margin-top: 300px !important;
+    margin-top: 330px !important;
 }
 
 .salad_text{
@@ -143,6 +143,36 @@ li a:visited {
 	text-align: center;
 	font-family: 'Cookie';
 	margin-top: 200px;
+	margin-bottom: -500px;
+	background-image: url("./Images/Images_aboutus/photo4.jpg");
+}
+
+
+.card1{
+	margin-right: 50px !important;
+    margin-bottom: 0 !important;
+    margin-left: 80px !important;
+    margin-top: 240px !important;
+}
+
+.pasta_text{
+	font-size: 70px;
+	color: brown;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Cookie';
+	margin-top: 100px;
+	margin-bottom: -500px;
+	background-image: url("./Images/Images_aboutus/photo4.jpg");
+}
+
+.pizza_text{
+	font-size: 70px;
+	color: brown;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Cookie';
+	margin-top: 100px;
 	margin-bottom: -500px;
 	background-image: url("./Images/Images_aboutus/photo4.jpg");
 }
