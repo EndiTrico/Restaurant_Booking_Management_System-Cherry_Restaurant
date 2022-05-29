@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(bg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./Images/loginPhoto.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -110,7 +110,8 @@ body {
 }
 
 .container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
-    border-color: #a29bfe;
+    border-color: 
+    #899160;
 }
 
 .container .login-email .input-group .btn {
@@ -119,7 +120,8 @@ body {
     padding: 15px 20px;
     text-align: center;
     border: none;
-    background: #a29bfe;
+    background: 
+    #899160   ;
     outline: none;
     border-radius: 30px;
     font-size: 1.2rem;

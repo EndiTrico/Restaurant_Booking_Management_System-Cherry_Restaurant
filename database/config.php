@@ -1,14 +1,7 @@
-<?php 
-
-$server = "localhost";
-$user = "root";
-$pass = "";
-$database = "cherryRestaurant";
-
-$conn = mysqli_connect($server, $user, $pass, $database);
-
-if (!$conn) {
-    die("<script>alert('Connection Failed.')</script>");
-}
-
+<?php
+    // configure the data for database access
+    $dbhost = 'localhost';
+    $dbuser = 'root';
+    $dbpass = '';
+    $dbname = 'cherryRestaurant';
 ?>
