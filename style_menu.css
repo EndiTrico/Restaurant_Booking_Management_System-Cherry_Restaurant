@@ -165,6 +165,12 @@ li a:visited {
 	background-image: url("./Images/Images_aboutus/photo4.jpg");
 }
 
+.card2{
+	margin-right: 50px !important;
+    margin-bottom: 0 !important;
+    margin-left: 80px !important;
+    margin-top: 70px !important;
+}
 .pizza_text{
 	font-size: 70px;
 	color: brown;
