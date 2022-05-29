@@ -171,7 +171,19 @@ li a:visited {
     margin-left: 80px !important;
     margin-top: 70px !important;
 }
+
 .pizza_text{
+	font-size: 70px;
+	color: brown;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Cookie';
+	margin-top: 100px;
+	margin-bottom: -500px;
+	background-image: url("./Images/Images_aboutus/photo4.jpg");
+}
+
+.dessert_text{
 	font-size: 70px;
 	color: brown;
 	font-weight: bold;
