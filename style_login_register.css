@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./Images/loginPhoto.png);
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./Images/Images_Login/photo1.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -18,16 +18,70 @@ body {
     align-items: center;
 }
 
-.container {
+nav {
+	background: whitesmoke;
+	text-align: right;
+	height: 79px;
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+    top: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-top: 30px;
+	text-decoration: none;
+}
+
+nav ul li a {
+	list-style: none !important;
+	text-decoration: none !important;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 80px;
+	padding-bottom: 27px;
+	color: brown;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 17px;
+}
+
+li a:hover {
+	background: linear-gradient(#e9a092 0%, brown	100%);
+	color: whitesmoke !important;
+	text-decoration: none;
+	z-index: 10;
+}
+
+li a:link {
+	text-decoration: none;
+	color: brown;
+}
+
+li a:visited {
+	text-decoration: none;
+	color: brown;
+}
+
+.logo {
+	float: left;
+	width: auto;
+	height: 75px;
+	margin-left: 40px;
+}
+
+.container1 {
     width: 400px;
     min-height: 400px;
     background: #FFF;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,.3);
     padding: 40px 30px;
+    margin-top: 80px;
 }
 
-.container .login-text {
+.container1 .login-text {
     color: #111;
     font-weight: 500;
     font-size: 1.1rem;
@@ -37,13 +91,13 @@ body {
     text-transform: capitalize;
 }
 
-.container .login-social {
+.container1 .login-social {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     margin-bottom: 25px;
 }
 
-.container .login-social a {
+.container1 .login-social a {
     padding: 12px;
     margin: 10px;
     border-radius: 3px;
@@ -55,49 +109,49 @@ body {
     transition: .3s;
 }
 
-.container .login-social a i {
+.container1 .login-social a i {
     margin-right: 5px;
 }
 
-.container .login-social a.facebook {
+.container1 .login-social a.facebook {
     background: #4267B2;
 }
 
-.container .login-social a.twitter {
+.container1 .login-social a.twitter {
     background: #1DA1F2;
 }
 
-.container .login-social a.google-plus {
+.container1 .login-social a.google-plus {
     background: #db4a39;
 }
 
-.container .login-social a.linkedin {
+.container1 .login-social a.linkedin {
     background: #0e76a8;
 }
 
-.container .login-social a.facebook:hover {
+.container1 .login-social a.facebook:hover {
     background: #3d5fa3;
 }
 
-.container .login-social a.twitter:hover {
+.container1 .login-social a.twitter:hover {
     background: #1991db;
 }
 
-.container .login-social a.google-plus:hover {
+.container1 .login-social a.google-plus:hover {
     background: #ca4334;
 }
 
-.container .login-social a.linkedin:hover {
+.container1 .login-social a.linkedin:hover {
     background: #0b5c81;
 }
 
-.container .login-email .input-group {
+.container1 .login-email .input-group {
     width: 100%;
     height: 50px;
     margin-bottom: 25px;
 }
 
-.container .login-email .input-group input {
+.container1 .login-email .input-group input {
     width: 100%;
     height: 100%;
     border: 2px solid #e7e7e7;
@@ -109,12 +163,12 @@ body {
     transition: .3s;
 }
 
-.container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
+.container1 .login-email .input-group input:focus, .container .login-email .input-group input:valid {
     border-color: 
     #899160;
 }
 
-.container .login-email .input-group .btn {
+.container1 .login-email .input-group .btn {
     display: block;
     width: 100%;
     padding: 15px 20px;
@@ -130,7 +184,7 @@ body {
     transition: .3s;
 }
 
-.container .login-email .input-group .btn:hover {
+.container1 .login-email .input-group .btn:hover {
     transform: translateY(-5px);
     background: #6c5ce7;
 }

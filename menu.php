@@ -5,34 +5,16 @@
   <link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <title>Cherry Restaurant | Menu</title>
 </head>
 
 <body>
-  <nav>
-    <a href="index.html"> <img class="logo" src="./images/restaurant_logo.png"></a>
-
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      <li><a href="reservation.html">Reservation</a></li>
-    </ul>
-  </nav>
+  <?php include "header.php"; ?>
 
   <div class="photo_menu">
     <img class="img_menu" src="./Images/Images_Menu/photo1.jpg">
@@ -269,8 +251,8 @@
       <img src="./Images/Images_Menu/photo21.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Red Wine</h5>
-        <p class="card-text">Dard, Napoleon Reserve, Arenile, Al Passo Lento, Impure Malbec, 
-            Paladin Syrah</p>
+        <p class="card-text">Dard, Napoleon Reserve, Arenile, Al Passo Lento, Impure Malbec,
+          Paladin Syrah</p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Price: (Varies)</small>
@@ -281,8 +263,8 @@
       <img src="./Images/Images_Menu/photo23.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Beer</h5>
-        <p class="card-text">Stella Artois Spin, Stella Artois Spin, Korca, Heineken, Niksicko, 
-            Veltins, Paulaner, La Trappe, Baladin Artisan</p>
+        <p class="card-text">Stella Artois Spin, Stella Artois Spin, Korca, Heineken, Niksicko,
+          Veltins, Paulaner, La Trappe, Baladin Artisan</p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Price: (Varies)</small>
@@ -293,8 +275,8 @@
       <img src="./Images/Images_Menu/photo22.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">White Wine</h5>
-        <p class="card-text">Napoleon Reserve, La Ferla, Farina Pinot, Paladin Sauvignon, 
-            Terre D'Aione</p>
+        <p class="card-text">Napoleon Reserve, La Ferla, Farina Pinot, Paladin Sauvignon,
+          Terre D'Aione</p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Price: (Varies)</small>
@@ -335,44 +317,8 @@
     </div>
   </div>
 
-  <div class="footer">
-    <div class="container footer">
-      <div class="row">
-
-        <div class="col-md-4">
-          <h4 class="footer_text">Cherry Restaurant - Vila</h4>
-          <ul>
-            <li class="contact_text"><span class="span_icon">Address: </span>"Mustafa Matohiti"</li>
-            <li class="contact_text"><span class="span_icon">Phone number: </span>+355 69 57 12 565</li>
-            <li class="contact_text"><span class="span_icon">Email: </span>cherryrestaurant_vila@gmail.com
-            </li>
-          </ul>
-
-        </div>
-
-        <div class="col-md-4">
-          <h4 class="footer_text_middle">Follow us on:</h4><br>
-          <section class="footer_icons">
-            <a href="www.facebook.com"><img class="myicons" src="./Images/facebook_icon.png" alt="Facebook Icon"></a>
-            <a href="www.instagram.com"></a><img class="myicons" src="./Images/instagram_icon.png"
-              alt="Instagram Icon"></a>
-            <a href="www.linkedIn.com"></a><img class="myicons" src="./Images/linkedIn_icon.png"
-              alt="linkedIn Icon"></a>
-          </section>
-        </div>
-
-        <div class="col-md-4">
-          <h4 class="footer_text">Cherry Restaurant - Bllok</h4>
-          <ul>
-            <li class="contact_text"><span class="span_icon">Address: </span>"Pjetër Bogdani"</li>
-            <li class="contact_text"><span class="span_icon">Phone number: </span>+355 69 57 12 852</li>
-            <li class="contact_text"><span class="span_icon">Email: </span>cherryrestaurant_bllok@gmail.com
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
+  <?php include "footer.php"; ?>
+  
 </body>
 
 </html>

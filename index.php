@@ -5,17 +5,10 @@
     <link rel="stylesheet" href="style_index.css">
     <link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <script src="js_index.js">
 
@@ -25,25 +18,14 @@
 </head>
 
 <body>
-    <nav>
-        <a href="index.html"> <img class="logo" src="./images/restaurant_logo.png"></a>
-
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="reservation.php">Reservation</a></li>
-        </ul>
-    </nav>
+    <?php include "header.php"; ?>
 
 
     <div class="slider">
         <figure>
             <div class="figure_div">
                 <h2 class="figure_text1">Welcome to Cherry!<br>Bon Appetit!</h2>
-                <img class="carousel_images" id= "carousel1" src="./Images/photo12.png">
+                <img class="carousel_images" id="carousel1" src="./Images/photo12.png">
             </div>
             <div class="figure_div">
                 <img class="carousel_images" src="./Images/photo15.png">
@@ -85,7 +67,7 @@
     <div class="wrapper">
         <div class="container">
             <div class="row">
-                
+
                 <div class="col-md-3">
                     <div class="containercount">
                         <i class="fas fa-utensils"></i>
@@ -101,7 +83,7 @@
                         <span class="text">Happy Customers</span>
                     </div>
                 </div>
-                
+
                 <div class="col-md-3">
                     <div class="containercount">
                         <i class="fas fa-list"></i>
@@ -122,40 +104,7 @@
         </div>
     </div>
 
-    <div class="footer">
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-md-4">
-                <h4 class="footer_text">Cherry Restaurant - Vila</h4>
-                <ul>
-                    <li class="contact_text"><span class="span_icon">Address: </span>"Mustafa Matohiti"</li>
-                    <li class="contact_text"><span class="span_icon">Phone number: </span>+355 69 57 12 565</li>
-                    <li class="contact_text"><span class="span_icon">Email: </span>cherryrestaurant_vila@gmail.com</li>
-                </ul> 
-
-            </div>
-
-            <div class="col-md-4">
-                <h4 class="footer_text_middle">Follow us on:</h4><br>
-                <section class="footer_icons">
-                    <a href="www.facebook.com"><img class="myicons" src="./Images/facebook_icon.png" alt="Facebook Icon"></a>
-                    <a href="www.instagram.com"></a><img class="myicons" src="./Images/instagram_icon.png" alt="Instagram Icon"></a>
-                    <a href="www.linkedIn.com"></a><img class="myicons" src="./Images/linkedIn_icon.png" alt="linkedIn Icon"></a>
-                </section>
-            </div>
-
-            <div class="col-md-4">
-                <h4 class="footer_text">Cherry Restaurant - Bllok</h4>
-                <ul>
-                    <li class="contact_text"><span class="span_icon">Address: </span>"Pjetër Bogdani"</li>
-                    <li class="contact_text"><span class="span_icon">Phone number: </span>+355 69 57 12 852</li>
-                    <li class="contact_text"><span class="span_icon">Email: </span>cherryrestaurant_bllok@gmail.com</li>
-                </ul>   
-            </div>
-
-        </div>
-    </div>
+	<?php include "footer.php"; ?>    
 
 </body>
 
