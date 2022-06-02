@@ -18,7 +18,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 			// set the session
 			$_SESSION['email'] = $email;
 
-			header('Location: aboutus.php');
+			header('Location: user_reservation.php');
 			exit();
 		} else {
 			$errorMessage = 'Error: Wrong Username or password!';
