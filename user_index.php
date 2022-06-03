@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <?php include "header.php"; ?>
+    <?php include "header_user.php"; ?>
 
 
     <div class="slider">
