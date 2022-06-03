@@ -1,128 +1,183 @@
-<?php
-?>
+<html>
 
-    
-    <!-- end of nav bar -->
+<head>
+    <link rel="stylesheet" href=".css">
+    <link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
 
-<br><br>
-<div class="container">
-    <h3 class="text-center"><br>New Reservation<br></h3>   
-    <div class="row">
-        <div class="col-md-6 offset-md-3">   
- 
-        
-        
-        
-    
-<?php
-if(isset($_SESSION['user_id'])){
-    echo '<p class="text-white bg-dark text-center">Welcome '. $_SESSION['username'] .', Create your reservation here!</p>';
-      
-  //error handling:
-    
-    if(isset($_GET['error3'])){
-        if($_GET['error3'] == "emptyfields") {   //douleuei bazw ta errors apo ta headers.. prp na bgalw to requiered
-            echo '<h5 class="bg-danger text-center">Fill all fields, Please try again!</h5>';
-        }
-        else if($_GET['error3'] == "invalidfname") {   
-            echo '<h5 class="bg-danger text-center">Invalid First Name, Please try again!</h5>';
-        }
-        else if($_GET['error3'] == "invalidlname") {   
-            echo '<h5 class="bg-danger text-center">Invalid Last Name, Please try again!</h5>';
-        }
-        else if($_GET['error3'] == "invalidtele") {   
-            echo '<h5 class="bg-danger text-center">Invalid Telephone, Pleast try again!</h5>';
-        }
-        else if($_GET['error3'] == "invalidcomment") {   
-            echo '<h5 class="bg-danger text-center">Invalid Comment, Pleast try again!</h5>';
-        }
-        else if($_GET['error3'] == "invalidguests") {   
-            echo '<h5 class="bg-danger text-center">Invalid Guests, Pleast try again!</h5>';
-        }
-        else if($_GET['error3'] == "full") {   
-            echo '<h5 class="bg-danger text-center">Reservations are full this date and timezone, Please try again!</h5>';
-        }
-    }
-        if(isset($_GET['reservation'])) {   
-           if($_GET['reservation'] == "success"){ 
-            echo '<h5 class="bg-success text-center">Your reservation was successfull!</h5>';
-        }
-        }
-        echo'<br>';
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <title>Cherry Restaurant | Gallery</title>
+</head>
 
+<body>
+    <?php include "header.php"; ?>
 
-    
-
-    
-    
-     //reservation form  
-    echo '  
-        
-    <div class="signup-form">
-        <form action="includes/reservation.inc.php" method="post">
-            <div class="form-group">
-            <label>First Name</label>
-                <input type="text" class="form-control" name="fname" placeholder="First Name" required="required">
-                <small class="form-text text-muted">First name must be 2-20 characters long</small>
-            </div>
-            <div class="form-group">
-            <label>Last Name</label>
-                <input type="text" class="form-control" name="lname" placeholder="Last Name" required="required">
-                <small class="form-text text-muted">Last name must be 2-20 characters long</small>
-            </div>   
-            <div class="form-group">
-            <label>Enter Date</label>
-        	<input type="date" class="form-control" name="date" placeholder="Date" required="required">
-            </div>
-            <div class="form-group">
-		<label>Enter Time Zone</label>
-		<select class="form-control" name="time">
-		<option>12:00 - 16:00</option>
-		<option>16:00 - 20:00</option>
-		<option>20:00 - 00:00</option>
-		</select>
-            </div>
-            <div class="form-group">
-            <label>Enter number of Guests</label>
-        	<input type="number" class="form-control" min="1" name="num_guests" placeholder="Guests" required="required">
-                <small class="form-text text-muted">Minimum value is 1</small>
-            </div>
-            <div class="form-group">
-            <label for="guests">Enter your Telephone Number</label>
-                <input type="telephone" class="form-control" name="tele" placeholder="Telephone" required="required">
-                <small class="form-text text-muted">Telephone must be 6-20 characters long</small>
-            </div>
-            <div class="form-group">
-            <label>Enter extra Comments</label>
-                <textarea class="form-control" name="comments" placeholder="Comments" rows="3"></textarea>
-                <small class="form-text text-muted">Comments must be less than 200 characters</small>
-            </div>        
-            <div class="form-group">
-		<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
-            </div>
-            <div class="form-group">
-            <button type="submit" name="reserv-submit" class="btn btn-dark btn-lg btn-block">Submit Reservation</button>
-            </div>
-        </form>
-        <br><br>
+    <div>
+        <img class="main_photo" src="./Images/Images_Gallery/photo1.png" alt="Main Photo Gallery">
+        <img class="main_photo2" src="./Images/Images_Gallery/photo2.png" alt="Second Photo Gallery">
+        <h1 class="gallery_text">Gallery</h1>
     </div>
-    ';  
-    }
 
-    else {
-        echo '	<p class="text-center text-danger"><br>You are currently not logged in!<br></p>
-       <p class="text-center">In order to make a reservation you have to create an account!<br><br><p>';  
-        
-    }
-    ?>
+    <div>
+        <h1 class="gallery_welcome">Welcome to our Restaurant!</h1>
+    </div>
 
-             
+    <div class="first_row">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo7.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo8.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo9.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo10.png" alt="Photo Gallery">
+                </div>
+
+
+            </div>
         </div>
     </div>
-</div>
-<br><br>
+
+    <div class="second_row">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo11.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo12.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo13.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo14.png" alt="Photo Gallery">
+                </div>
 
 
-<?php
-?>
+            </div>
+        </div>
+    </div>
+
+    <div class="third_row">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo15.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo18.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo17.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo16.png" alt="Photo Gallery">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="fourth_row">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo3.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo26.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo19.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo6.png" alt="Photo Gallery">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="fifth_row">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo4.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo24.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo27.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo20.png" alt="Photo Gallery">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="sixth_row">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo5.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo23.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo25.png" alt="Photo Gallery">
+                </div>
+
+                <div class="col-md-3">
+                    <img class="gallery_photos" src="./Images/Images_Gallery/photo22.png" alt="Photo Gallery">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <?php include "footer.php"; ?>
+
+</body>
+
+</html>
