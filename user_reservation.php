@@ -107,7 +107,7 @@ if (
                         <textarea class="form-control" name="comments" placeholder="Comments" rows="3"></textarea>
                     </div>
                     <div class="form-group">
-                        <button type="submit" name="reserv-submit" class="btn btn-dark btn-lg btn-block">Submit Reservation</button>
+                        <button type="submit" name="reserv-submit" class="btn btn-dark btn-lg btn-block button_style">Submit Reservation</button>
                     </div>
                     </form>
                     <script>
