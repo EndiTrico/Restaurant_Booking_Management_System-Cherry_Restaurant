@@ -35,14 +35,7 @@
                         <label>Enter Date</label>
                         <input type="date" class="form-control" name="date" placeholder="Date" required="required">
                     </div>
-                    <div class="form-group">
-                        <label>Enter Time Zone</label>
-                        <select class="form-control" name="time">
-                            <option>12:00 - 16:00</option>
-                            <option>16:00 - 20:00</option>
-                            <option>20:00 - 00:00</option>
-                        </select>
-                    </div>
+                   
                     <div class="form-group">
                         <label>Enter number of Guests</label>
                         <input type="number" class="form-control" min="1" name="num_guests" placeholder="Guests" required="required">
