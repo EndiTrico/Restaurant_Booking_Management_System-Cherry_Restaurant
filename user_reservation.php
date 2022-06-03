@@ -54,7 +54,7 @@ if (
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                <h1 class="page_title">Fill up the form <br>to book your table now!</h1>
+                <h1 class="page_title">Fill out the form <br>to book your table now!</h1>
                     <div class="form-group">
                         <label class="fname_style">First Name</label>
                         <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
@@ -74,7 +74,7 @@ if (
                         <input type="date" class="form-control" name="date" placeholder="Date" required="required">
                     </div>
                     <div class="form-group">
-                        <label>Enter Time </label>
+                        <label class="info_style">Enter Time </label>
                         <select class="form-control" name="time">
                             <option>09:00 AM</option>
                             <option>10:00 AM</option>
