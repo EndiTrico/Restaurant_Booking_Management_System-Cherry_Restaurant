@@ -44,7 +44,7 @@ if (
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <title>Cherry Restaurant | Gallery</title>
+    <title>Cherry Restaurant | Reservation</title>
 </head>
 
 <body>
@@ -54,8 +54,9 @@ if (
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                <h1 class="page_title">Fill up the form <br>to book your table now!</h1>
                     <div class="form-group">
-                        <label>First Name</label>
+                        <label class="fname_style">First Name</label>
                         <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
                     </div>
                     <div class="form-group">
@@ -65,6 +66,12 @@ if (
                     <div class="form-group">
                         <label>Enter Date</label>
                         <input type="date" class="form-control" name="date" placeholder="Date" id="date" min=x required="required">
+                        <label class="info_style">Last Name</label>
+                        <input type="text" class="form-control" name="lname" placeholder="Last Name" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label class="info_style">Enter Date</label>
+                        <input type="date" class="form-control" name="date" placeholder="Date" required="required">
                     </div>
                     <div class="form-group">
                         <label>Enter Time </label>
@@ -86,9 +93,9 @@ if (
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Enter number of Guests</label>
+                        <label class="info_style">Enter number of Guests</label>
                         <input type="number" class="form-control" min="1" name="num_guests" placeholder="Guests" required="required">
-                        <small class="form-text text-muted">Minimum value is 1</small>
+                        <small class="form-text text-muted">*Minimum value is 1</small>
                     </div>
                     <div class="form-group">
                         <label for="guests">Enter your Telephone Number</label>
@@ -96,7 +103,7 @@ if (
                         <small class="form-text text-muted">Telephone must be 6-20 characters long</small>
                     </div>
                     <div class="form-group">
-                        <label>Enter extra Comments</label>
+                        <label class="info_style">Enter extra Comments</label>
                         <textarea class="form-control" name="comments" placeholder="Comments" rows="3"></textarea>
                     </div>
                     <div class="form-group">
@@ -124,7 +131,6 @@ if (
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <?php include "footer.php"; ?>
 
