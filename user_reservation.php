@@ -60,12 +60,8 @@ if (
                         <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
                     </div>
                     <div class="form-group">
-                        <label>Last Name</label>
+                        <label class="info_style">Last Name</label>
                         <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required">
-                    </div>
-                    <div class="form-group">
-                        <label>Enter Date</label>
-                        <input type="date" class="form-control" name="date" placeholder="Date" id="date" min=x required="required">
                     </div>
                     <div class="form-group">
                         <label class="info_style">Enter Date</label>
