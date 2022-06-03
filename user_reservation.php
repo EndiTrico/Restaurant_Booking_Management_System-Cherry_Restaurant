@@ -1,5 +1,7 @@
 <?php
-
+session_start();
+include 'database/config.php';
+include 'database/opendb.php';
 $errorMessage = '';
 
 // check not NULL
@@ -12,15 +14,11 @@ if (
         !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['date']) &&
         !empty($_POST['time'])  && !empty($_POST['num_guests']) && !empty($_POST['telephone'])  && !empty($_POST['comments'])
     ) {
-        $first_name = $_POST['first_name'];
-        $last_name = $_POST['last_name'];
-        $date = $_POST['date'];
-        $time = $_POST['time'];
-        $num_guests = $_POST['num_guests'];
-        $telephone = $_POST['telephone'];
-        $comments = $_POST['comments'];
+        $id ="Select User_ID from users WHERE email = " .  $_SESSION["email"];
+        print($id);
+        $result1 = mysqli_query($conn, $id);
 
-        $mql = "INSERT INTO users(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, Comments) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . $_POST['comments'] . $_SESSION["user_id"] . "')";
+        $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, Comments, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . "','" . $_POST['comments'] . "','" . $result1 ."')";
         $result = mysqli_query($conn, $mql);
     } else {
         $errorMessage = 'Required fields missing!';
@@ -55,6 +53,7 @@ if (
             <div class="row">
                 <div class="col-md-12">
                 <h1 class="page_title">Fill out the form <br>to book your table now!</h1>
+                <form action="<?php print($_SERVER['PHP_SELF']); ?>" method="POST">
                     <div class="form-group">
                         <label class="fname_style">First Name</label>
                         <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
@@ -65,7 +64,7 @@ if (
                     </div>
                     <div class="form-group">
                         <label class="info_style">Enter Date</label>
-                        <input type="date" class="form-control" name="date" placeholder="Date" required="required">
+                        <input type="date" class="form-control" name="date" id="date" placeholder="Date" required="required">
                     </div>
                     <div class="form-group">
                         <label class="info_style">Enter Time </label>
@@ -102,7 +101,7 @@ if (
                     <div class="form-group">
                         <button type="submit" name="reserv-submit" class="btn btn-dark btn-lg btn-block button_style">Submit Reservation</button>
                     </div>
-                    </form>
+                </form>
                     <script>
                         var today = new Date();
                         var dd = today.getDate() + 1;

@@ -9,9 +9,6 @@ if (isset($_POST['submit'])) //if submit button is pressed)
 	if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['cpassword'])) {
 
 		if (!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['cpassword'])) {
-			$username = $_POST["username"];
-			$email = $_POST['email'];
-			$password = $_POST['password'];
 
 			//cheching email if already present
 			$check_email = mysqli_query($conn, "SELECT Email FROM users where Email = '" . $_POST['email'] . "' ");
