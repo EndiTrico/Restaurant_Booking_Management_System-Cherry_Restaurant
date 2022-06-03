@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -18,7 +19,57 @@
 <body>
     <?php include "header_user.php"; ?>
 
-
+    <div class="reservation_form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" name="lname" placeholder="Last Name" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Enter Date</label>
+                        <input type="date" class="form-control" name="date" placeholder="Date" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Enter Time Zone</label>
+                        <select class="form-control" name="time">
+                            <option>12:00 - 16:00</option>
+                            <option>16:00 - 20:00</option>
+                            <option>20:00 - 00:00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Enter number of Guests</label>
+                        <input type="number" class="form-control" min="1" name="num_guests" placeholder="Guests" required="required">
+                        <small class="form-text text-muted">Minimum value is 1</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Enter your Telephone Number</label>
+                        <input type="telephone" class="form-control" name="tele" placeholder="Telephone" required="required">
+                        <small class="form-text text-muted">Telephone must be 6-20 characters long</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Enter extra Comments</label>
+                        <textarea class="form-control" name="comments" placeholder="Comments" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" name="reserv-submit" class="btn btn-dark btn-lg btn-block">Submit Reservation</button>
+                    </div>
+                    </form>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <?php include "footer.php"; ?>
 
 </body>
