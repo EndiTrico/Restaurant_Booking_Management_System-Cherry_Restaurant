@@ -66,8 +66,6 @@ if (
                     <div class="form-group">
                         <label>Enter Date</label>
                         <input type="date" class="form-control" name="date" placeholder="Date" id="date" min=x required="required">
-                        <label class="info_style">Last Name</label>
-                        <input type="text" class="form-control" name="lname" placeholder="Last Name" required="required">
                     </div>
                     <div class="form-group">
                         <label class="info_style">Enter Date</label>
