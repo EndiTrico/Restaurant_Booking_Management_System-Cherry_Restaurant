@@ -1,6 +1,31 @@
 <?php
 
+$errorMessage = '';
 
+// check not NULL
+if (
+    isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['date']) &&
+    isset($_POST['time'])  && isset($_POST['num_guests']) && isset($_POST['telephone'])  && isset($_POST['comments'])
+) {
+    // check that values are not empty string, 0, or false
+    if (
+        !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['date']) &&
+        !empty($_POST['time'])  && !empty($_POST['num_guests']) && !empty($_POST['telephone'])  && !empty($_POST['comments'])
+    ) {
+        $first_name = $_POST['first_name'];
+        $last_name = $_POST['last_name'];
+        $date = $_POST['date'];
+        $time = $_POST['time'];
+        $num_guests = $_POST['num_guests'];
+        $telephone = $_POST['telephone'];
+        $comments = $_POST['comments'];
+
+        $mql = "INSERT INTO users(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, Comments) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . $_POST['comments'] . $_SESSION["user_id"] . "')";
+        $result = mysqli_query($conn, $mql);
+    } else {
+        $errorMessage = 'Required fields missing!';
+    }
+}
 
 
 ?>
@@ -35,11 +60,11 @@
                     </div>
                     <div class="form-group">
                         <label>Last Name</label>
-                        <input type="text" class="form-control" name="lname" placeholder="Last Name" required="required">
+                        <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required">
                     </div>
                     <div class="form-group">
                         <label>Enter Date</label>
-                        <input type="date" class="form-control" name="date" placeholder="Date" required="required">
+                        <input type="date" class="form-control" name="date" placeholder="Date" id="date" min=x required="required">
                     </div>
                     <div class="form-group">
                         <label>Enter Time </label>
@@ -67,7 +92,7 @@
                     </div>
                     <div class="form-group">
                         <label for="guests">Enter your Telephone Number</label>
-                        <input type="telephone" class="form-control" name="tele" placeholder="Telephone" required="required">
+                        <input type="telephone" class="form-control" name="telephone" placeholder="Telephone" required="required">
                         <small class="form-text text-muted">Telephone must be 6-20 characters long</small>
                     </div>
                     <div class="form-group">
@@ -75,12 +100,26 @@
                         <textarea class="form-control" name="comments" placeholder="Comments" rows="3"></textarea>
                     </div>
                     <div class="form-group">
-                        <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
-                    </div>
-                    <div class="form-group">
                         <button type="submit" name="reserv-submit" class="btn btn-dark btn-lg btn-block">Submit Reservation</button>
                     </div>
                     </form>
+                    <script>
+                        var today = new Date();
+                        var dd = today.getDate() + 1;
+                        var mm = today.getMonth() + 1; //January is 0!
+                        var yyyy = today.getFullYear();
+
+                        if (dd < 10) {
+                            dd = '0' + dd;
+                        }
+
+                        if (mm < 10) {
+                            mm = '0' + mm;
+                        }
+
+                        today = yyyy + '-' + mm + '-' + dd;
+                        document.getElementById("date").setAttribute("min", today);
+                    </script>
                     <br><br>
                 </div>
             </div>
