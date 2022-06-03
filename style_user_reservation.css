@@ -97,3 +97,37 @@ li a:visited {
 	padding-left: 20px;
 }
 
+.page_title{
+	font-family: "Cookie";
+	font-size: 70px;
+	font-weight: bold;
+	color: #314010;
+	text-align: center;
+	text-shadow: 5px 5px 2px #cad2b9;
+	border-style: outset;
+	border-color: green;
+	margin-top:110px;
+}
+
+.fname_style{
+	margin-top: 30px;
+	font-family: 'Verdana';
+	font-weight: bold;
+	color: #7b1313;
+}
+
+.info_style{
+	font-family: 'Verdana';
+	font-weight: bold;
+	color: #7b1313;
+}
+
+.button_style{
+	font-family: Verdana;
+	font-weight: bold !important;
+	font-size: 20px !important; 
+	color: white !important;
+	background-color: #113a04  !important;
+	background: linear-gradient(#5e914e 0%, #113a04 100%);
+	margin-bottom: -65px;
+}
