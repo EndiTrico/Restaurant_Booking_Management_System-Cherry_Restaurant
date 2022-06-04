@@ -14,11 +14,10 @@ if (
         !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['date']) &&
         !empty($_POST['time'])  && !empty($_POST['num_guests']) && !empty($_POST['telephone'])  && !empty($_POST['comments'])
     ) {
-        $id ="Select User_ID from users WHERE email = " .  $_SESSION["email"];
-        print($id);
-        $result1 = mysqli_query($conn, $id);
+        $userid = mysqli_query($conn, "SELECT User_ID FROM users where email = '".$_SESSION['email']. "'");
+      //$result1 = mysqli_query($conn, $id);
 
-        $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, Comments, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . "','" . $_POST['comments'] . "','" . $result1 ."')";
+        $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, Comments, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . "','" . $_POST['comments'] . "','" . $userid ."')";
         $result = mysqli_query($conn, $mql);
     } else {
         $errorMessage = 'Required fields missing!';
