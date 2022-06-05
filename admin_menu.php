@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <?php include "header_user.php"; ?>
+<?php include "header_admin.php"; ?>
 
   <div class="photo_menu">
     <img class="img_menu" src="./Images/Images_Menu/photo1.jpg">
