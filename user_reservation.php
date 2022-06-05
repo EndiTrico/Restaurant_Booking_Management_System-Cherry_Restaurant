@@ -7,17 +7,29 @@ $errorMessage = '';
 // check not NULL
 if (
     isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['date']) &&
-    isset($_POST['time'])  && isset($_POST['num_guests']) && isset($_POST['telephone'])  && isset($_POST['comments'])
+    isset($_POST['time'])  && isset($_POST['num_guests']) && isset($_POST['telephone'])
 ) {
     // check that values are not empty string, 0, or false
     if (
         !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['date']) &&
         !empty($_POST['time'])  && !empty($_POST['num_guests']) && !empty($_POST['telephone'])  && !empty($_POST['comments'])
     ) {
-        $userid = mysqli_query($conn, "SELECT User_ID FROM users where email = '".$_SESSION['email']. "'");
-      //$result1 = mysqli_query($conn, $id);
 
-        $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, Comments, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . "','" . $_POST['comments'] . "','" . $userid ."')";
+        $userid = "SELECT User_ID FROM users where Email = '" . $_SESSION['email'] . "' ";
+        $result1 = mysqli_query($conn, $userid);
+        $row = mysqli_fetch_array($result1);
+
+        $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, Comments, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . "','" . $_POST['comments'] . "','" . $row[0] . "')";
+        $result = mysqli_query($conn, $mql);
+    } else if (
+        !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['date']) &&
+        !empty($_POST['time'])  && !empty($_POST['num_guests']) && !empty($_POST['telephone'])  && empty($_POST['comments'])
+    ) {
+        $userid = "SELECT User_ID FROM users where Email = '" . $_SESSION['email'] . "' ";
+        $result1 = mysqli_query($conn, $userid);
+        $row = mysqli_fetch_array($result1);
+
+        $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . "','"  . $row[0] . "')";
         $result = mysqli_query($conn, $mql);
     } else {
         $errorMessage = 'Required fields missing!';
@@ -51,56 +63,56 @@ if (
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                <h1 class="page_title">Fill out the form <br>to book your table now!</h1>
-                <form action="<?php print($_SERVER['PHP_SELF']); ?>" method="POST">
-                    <div class="form-group">
-                        <label class="fname_style">First Name</label>
-                        <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
-                    </div>
-                    <div class="form-group">
-                        <label class="info_style">Last Name</label>
-                        <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required">
-                    </div>
-                    <div class="form-group">
-                        <label class="info_style">Enter Date</label>
-                        <input type="date" class="form-control" name="date" id="date" placeholder="Date" required="required">
-                    </div>
-                    <div class="form-group">
-                        <label class="info_style">Enter Time </label>
-                        <select class="form-control" name="time">
-                            <option>09:00 AM</option>
-                            <option>10:00 AM</option>
-                            <option>11:00 AM</option>
-                            <option>12:00 PM</option>
-                            <option>01:00 PM</option>
-                            <option>02:00 PM</option>
-                            <option>03:00 PM</option>
-                            <option>04:00 PM</option>
-                            <option>05:00 PM</option>
-                            <option>06:00 PM</option>
-                            <option>07:00 PM</option>
-                            <option>08:00 PM</option>
-                            <option>09:00 PM</option>
-                            <option>10:00 PM</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="info_style">Enter number of Guests</label>
-                        <input type="number" class="form-control" min="1" name="num_guests" placeholder="Guests" required="required">
-                        <small class="form-text text-muted">*Minimum value is 1</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="guests" class="info_style">Enter your Telephone Number</label>
-                        <input type="telephone" class="form-control" name="telephone" placeholder="Telephone" required="required">
-                    </div>
-                    <div class="form-group">
-                        <label class="info_style">Enter extra Comments</label>
-                        <textarea class="form-control" name="comments" placeholder="Comments" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" name="reserv-submit" class="btn btn-dark btn-lg btn-block button_style">Submit Reservation</button>
-                    </div>
-                </form>
+                    <h1 class="page_title">Fill out the form <br>to book your table now!</h1>
+                    <form action="<?php print($_SERVER['PHP_SELF']); ?>" method="POST">
+                        <div class="form-group">
+                            <label class="fname_style">First Name</label>
+                            <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label class="info_style">Last Name</label>
+                            <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label class="info_style">Enter Date</label>
+                            <input type="date" class="form-control" name="date" id="date" placeholder="Date" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label class="info_style">Enter Time </label>
+                            <select class="form-control" name="time">
+                                <option>09:00 AM</option>
+                                <option>10:00 AM</option>
+                                <option>11:00 AM</option>
+                                <option>12:00 PM</option>
+                                <option>01:00 PM</option>
+                                <option>02:00 PM</option>
+                                <option>03:00 PM</option>
+                                <option>04:00 PM</option>
+                                <option>05:00 PM</option>
+                                <option>06:00 PM</option>
+                                <option>07:00 PM</option>
+                                <option>08:00 PM</option>
+                                <option>09:00 PM</option>
+                                <option>10:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="info_style">Enter number of Guests</label>
+                            <input type="number" class="form-control" min="1" name="num_guests" placeholder="Guests" required="required">
+                            <small class="form-text text-muted">*Minimum value is 1</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests" class="info_style">Enter your Telephone Number</label>
+                            <input type="telephone" class="form-control" name="telephone" placeholder="Telephone" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label class="info_style">Enter extra Comments</label>
+                            <textarea class="form-control" name="comments" placeholder="Comments" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" name="reserv-submit" class="btn btn-dark btn-lg btn-block button_style">Submit Reservation</button>
+                        </div>
+                    </form>
                     <script>
                         var today = new Date();
                         var dd = today.getDate() + 1;
