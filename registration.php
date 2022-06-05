@@ -12,12 +12,18 @@ if (isset($_POST['submit'])) //if submit button is pressed)
 
 			//cheching email if already present
 			$check_email = mysqli_query($conn, "SELECT Email FROM users where Email = '" . $_POST['email'] . "' ");
-
+			$check_username = mysqli_query($conn, "SELECT Username FROM users where Email = '" . $_POST['username'] . "' ");
 			if ($_POST['password'] != $_POST['cpassword']) {  //matching passwords
 				echo '<script type="text/javascript">';
 				echo 'alert("The password entered does not matched the confirmed password")';  //not showing an alert box.
 				echo '</script>';
-			} elseif (mysqli_num_rows($check_email) > 0) //check email
+			} 
+			elseif (mysqli_num_rows($check_username) > 0) //check email
+			{
+				echo '<script type="text/javascript">';
+				echo 'alert("Someone else is using this username")';  //not showing an alert box.
+				echo '</script>';
+			} 			elseif (mysqli_num_rows($check_email) > 0) //check email
 			{
 				echo '<script type="text/javascript">';
 				echo 'alert("Someone else is using this email")';  //not showing an alert box.
