@@ -10,5 +10,6 @@
         <li><a href="reservation.php">Reservation</a></li>
         <li><a href="settings.php">Settings</a></li>
     </ul>
-    
+
 </nav>
+    
