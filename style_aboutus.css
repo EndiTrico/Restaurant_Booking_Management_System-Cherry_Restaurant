@@ -25,9 +25,9 @@ nav ul li {
 nav ul li a {
 	list-style: none !important;
 	text-decoration: none !important;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-top: 80px;
+	padding-right: 20px !important;
+	padding-left: 20px !important;
+	padding-top: 0px !important;
 	padding-bottom: 27px;
 	color: brown;
 	font-weight: bold;
@@ -217,3 +217,4 @@ nav ul li:hover .sub-menu-1{
 	opacity: 1;
 }
 
+		

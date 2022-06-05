@@ -62,7 +62,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && ($_POST['role'])) {
 
 	<link rel="stylesheet" type="text/css" href="style_login_register.css">
 
-	<title>Cherry Restaurant | Login</title>
+	<title>Cherry Restaurant | Log In</title>
 </head>
 
 <body>
@@ -73,7 +73,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && ($_POST['role'])) {
 		<div id="loginFormContainer">
 
 			<form action="<?php print($_SERVER['PHP_SELF']); ?>" method="POST" class="login-email">
-				<p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
+				<p class="login-text" style="font-size: 2rem; font-weight: 800;">Log In</p>
 				<div class="form-group">
 					<label style="font-weight:bold;">Select your role:</label>
 					<select class="form-control" name="role">
