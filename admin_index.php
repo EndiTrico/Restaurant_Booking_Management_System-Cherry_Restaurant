@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <?php include "header_user.php"; ?>
+<?php include "header_admin.php"; ?>
 
 
     <div class="slider">

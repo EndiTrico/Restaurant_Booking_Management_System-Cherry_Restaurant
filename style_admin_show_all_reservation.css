@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-color: white !important;
+}
+
+nav {
+	background: whitesmoke;
+	text-align: right;
+	height: 80px;
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-top: 30px;
+	text-decoration: none;
+}
+
+nav ul li a {
+	list-style: none !important;
+	text-decoration: none !important;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 80px;
+	padding-bottom: 27px;
+	color: brown;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 17px;
+}
+
+li a:hover {
+	background: linear-gradient(#e9a092 0%, brown	100%);
+	color: whitesmoke !important;
+	text-decoration: none;
+	z-index: 10;
+}
+
+li a:link {
+	text-decoration: none;
+	color: brown;
+}
+
+li a:visited {
+	text-decoration: none;
+	color: brown;
+}
+
+.logo {
+	float: left;
+	width: auto;
+	height: 75px;
+	margin-left: 40px;
+}
+
+.showreservation{
+    margin-top: 50px !important;
+    margin-left: 40px;
+    width: 95% !important;
+}
+
+.h3_text {
+    margin-top: 110px;
+    text-align: center;
+	font-family: "Cookie";
+	font-size: 70px;
+	font-weight: bold;
+	color: #314010;
+	text-align: center;
+	text-shadow: 5px 5px 2px #cad2b9;
+}
+
+.header_style{
+	font-family: Verdana;
+	font-size: 15px;
+}

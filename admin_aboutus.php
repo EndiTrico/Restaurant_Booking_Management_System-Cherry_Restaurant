@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <?php include "header_user.php"; ?>
+    <?php include "header_admin.php"; ?>
 
     <div>
         <img class="photo" src="./Images/Images_aboutus/photo5.jpg">
