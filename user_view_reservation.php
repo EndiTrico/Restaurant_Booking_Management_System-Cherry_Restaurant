@@ -33,14 +33,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="h3_text">My Reservation</h2>
+                    <h2 class="h3_text">My Reservations</h2>
                 </div>
             </div>
         </div>
     </div>
 
     <?php
-    //rolos pelati
+
     $userid = "SELECT User_ID FROM users where Email = '" . $_SESSION['email'] . "' ";
     $result1 = mysqli_query($conn, $userid);
     $row2 = mysqli_fetch_array($result1);
@@ -57,14 +57,14 @@
             <table class="table table-hover table-responsive-sm text-center showreservation">
                 <thead>
                     <tr>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Time</th>
-                        <th scope="col">Guests</th>
-                        <th scope="col">Location</th>
-                        <th scope="col">Telephone Number</th>
-                        <th scope="col">Comments</th>
+                    <th scope="col" class="header_style">First Name</th>
+                    <th scope="col" class="header_style">Last Name</th>
+                        <th scope="col" class="header_style">Date</th>
+                        <th scope="col" class="header_style">Time</th>
+                        <th scope="col" class="header_style">Guests</th>
+                        <th scope="col" class="header_style">Location</th>
+                        <th scope="col" class="header_style">Telephone Number</th>
+                        <th scope="col" class="header_style">Comments</th>
                         <th class="table-danger" scope="col"></th>
                     </tr>
                 </thead> <tbody>';
@@ -91,4 +91,4 @@
     
     
     
-    //rolos upeuthinou 
+   

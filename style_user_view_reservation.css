@@ -65,7 +65,18 @@ li a:visited {
     width: 95% !important;
 }
 
-.h3_text{
-    margin-top: 100px;
+.h3_text {
+    margin-top: 110px;
     text-align: center;
+	font-family: "Cookie";
+	font-size: 70px;
+	font-weight: bold;
+	color: #314010;
+	text-align: center;
+	text-shadow: 5px 5px 2px #cad2b9;
+}
+
+.header_style{
+	font-family: Verdana;
+	font-size: 15px;
 }
