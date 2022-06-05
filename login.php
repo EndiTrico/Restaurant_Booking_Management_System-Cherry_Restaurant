@@ -58,6 +58,13 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
 			<form action="<?php print($_SERVER['PHP_SELF']); ?>" method="POST" class="login-email">
 				<p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
+				<div class="form-group">
+				<label style="font-weight:bold;">Select your role:</label>
+                     <select class="form-control"  name="role">
+                            <option>Admin</option>
+                            <option>User</option>
+                    </select>
+                </div>
 				<div class="input-group">
 					<input type="email" placeholder="Email" name="email" value="" required>
 				</div>

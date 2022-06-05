@@ -139,6 +139,13 @@ if (
                             <small class="form-text text-muted">*Minimum value is 1</small>
                         </div>
                         <div class="form-group">
+                            <label class="info_style">Enter Location</label>
+                            <select class="form-control" name="location">
+                                <option>Cherry Restaurant Villa</option>
+                                <option>Cherry Restaurant Bllok</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <label for="guests" class="info_style">Enter your Telephone Number</label>
                             <input type="telephone" class="form-control" name="telephone" placeholder="Telephone" required="required">
                         </div>
