@@ -6,23 +6,39 @@ include_once 'validate.php';
 $errorMessage = '';
 
 // check not NULL
-if (isset($_POST['email']) && isset($_POST['password'])) {
+if (isset($_POST['email']) && isset($_POST['password']) && ($_POST['role'])) {
 	// check that values are not empty string, 0, or false
-	if (!empty($_POST['email']) && !empty($_POST['password'])) {
+	if (!empty($_POST['email']) && !empty($_POST['password']) && ($_POST['role'])) {
+		$role = $_POST['role'];
 		$email = $_POST['email'];
 		$password = $_POST['password'];
-		
 
-		if (validateLogin($email, $password)) {
-			//start the session and register a variable
-			// the user id and password match,
-			// set the session
-			$_SESSION['email'] = $email;
+		if ($role = 'Admin') {
+			if (validateLogin($role, $email, $password)) {
+				//start the session and register a variable
+				// the user id and password match,
+				// set the session
+				$_SESSION['email'] = $email;
 
-			header('Location: user_reservation.php');
-			exit();
-		} else {
-			$errorMessage = 'Error: Wrong Username or password!';
+				header('Location: user_reservation.php');
+				exit();
+			} else {
+				$errorMessage = 'Error: Wrong Username or password or role!';
+			}
+		}
+
+		if ($role = 'User') {
+			if (validateLogin($role, $email, $password)) {
+				//start the session and register a variable
+				// the user id and password match,
+				// set the session
+				$_SESSION['email'] = $email;
+
+				header('Location: user_reservation.php');
+				exit();
+			} else {
+				$errorMessage = 'Error: Wrong Username or password or role!';
+			}
 		}
 	} else {
 		$errorMessage = 'Required fields missing!';
@@ -36,7 +52,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
+	<link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -59,12 +75,12 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 			<form action="<?php print($_SERVER['PHP_SELF']); ?>" method="POST" class="login-email">
 				<p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
 				<div class="form-group">
-				<label style="font-weight:bold;">Select your role:</label>
-                     <select class="form-control"  name="role">
-                            <option>Admin</option>
-                            <option>User</option>
-                    </select>
-                </div>
+					<label style="font-weight:bold;">Select your role:</label>
+					<select class="form-control" name="role">
+						<option>Admin</option>
+						<option>User</option>
+					</select>
+				</div>
 				<div class="input-group">
 					<input type="email" placeholder="Email" name="email" value="" required>
 				</div>

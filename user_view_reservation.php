@@ -43,11 +43,10 @@ if(isset($_SESSION['email'])){
                 <tbody>
                     <tr>
                     <form action='delete.php' method='POST'>
-                    <input name='reserv_id' type='hidden' value=".$row["User_ID"].">
+                    <input name='reserv_id' type='hidden' value=".$row["Reservation_ID"].">
                     <td>".$row["First_Name"]."</td>
                     <td>".$row["Last_Name"]."</td>
                     <td>".$row["Date"]."</td>
-                      <th scope='row'>".$row["First_name"]." ".$row["l_name"]."</th>
                       <td>".$row["Time"]."</td>
                       <td>".$row["Number_of_Guests"]."</td>
                       <td>".$row["Location"]."</td>

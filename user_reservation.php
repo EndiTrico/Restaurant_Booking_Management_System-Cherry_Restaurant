@@ -8,31 +8,31 @@ $successfulMessage = '';
 // check not NULL
 if (
     isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['date']) &&
-    isset($_POST['time'])  && isset($_POST['num_guests']) && isset($_POST['telephone'])
+    isset($_POST['time'])  && isset($_POST['num_guests']) && isset($_POST['location']) && isset($_POST['telephone'])
 ) {
     // check that values are not empty string, 0, or false
     if (
         !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['date']) &&
-        !empty($_POST['time'])  && !empty($_POST['num_guests']) && !empty($_POST['telephone'])  && !empty($_POST['comments'])
+        !empty($_POST['time'])  && !empty($_POST['num_guests'])  && isset($_POST['location']) && !empty($_POST['telephone'])  && !empty($_POST['comments'])
     ) {
 
         $userid = "SELECT User_ID FROM users where Email = '" . $_SESSION['email'] . "' ";
         $result1 = mysqli_query($conn, $userid);
         $row = mysqli_fetch_array($result1);
 
-        $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, Comments, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . "','" . $_POST['comments'] . "','" . $row[0] . "')";
+        $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Location, Telephone_Number, Comments, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['location'] ."','". $_POST['telephone'] . "','" . $_POST['comments'] . "','" . $row[0] . "')";
         $result = mysqli_query($conn, $mql);
 
         $successfulMessage = "You reservation request is completed";
     } else if (
         !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['date']) &&
-        !empty($_POST['time'])  && !empty($_POST['num_guests']) && !empty($_POST['telephone'])  && empty($_POST['comments'])
+        !empty($_POST['time'])  && !empty($_POST['num_guests']) && !empty($_POST['location']) && !empty($_POST['telephone'])  && empty($_POST['comments'])
     ) {
         $userid = "SELECT User_ID FROM users where Email = '" . $_SESSION['email'] . "' ";
         $result1 = mysqli_query($conn, $userid);
         $row = mysqli_fetch_array($result1);
 
-        $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . "','"  . $row[0] . "')";
+        $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Location, Telephone_Number, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['location'] . "','". $_POST['telephone'] . "','"  . $row[0] . "')";
         $result = mysqli_query($conn, $mql);
         $successfulMessage = "Y";
     } else {

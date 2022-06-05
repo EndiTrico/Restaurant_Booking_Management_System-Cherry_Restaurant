@@ -1,6 +1,6 @@
 <?php
 
-function validateLogin($email, $pw)
+function validateLogin($role, $email, $pw)
 {
     // open database
     include 'database/config.php';
@@ -8,19 +8,35 @@ function validateLogin($email, $pw)
     
     $md5Pw = md5($pw);
 
+    if($role =='Admin'){
+        $query = "SELECT * FROM admin WHERE Email='$email' AND Password='$md5Pw'";
+        $result = mysqli_query($conn, $query) or die ("Error executing the query");
+    
+        //check that at least one row was returned
+        $numrows = mysqli_num_rows($result);
+
+        if($numrows > 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    else{
     $query = "SELECT * FROM users WHERE Email='$email' AND Password='$md5Pw'";
     $result = mysqli_query($conn, $query) or die ("Error executing the query");
 
     //check that at least one row was returned
     $numrows = mysqli_num_rows($result);
-    
-    include 'database/closedb.php';
-    
     if($numrows > 0){
         return true;
     } else {
         return false;
     }
+    }
+
+    include 'database/closedb.php';  
+  
 }
 
 ?>
