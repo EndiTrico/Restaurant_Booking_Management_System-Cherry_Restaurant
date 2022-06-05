@@ -158,7 +158,7 @@ if (
                             <button type="submit" name="reserv-submit" class="btn btn-dark btn-lg btn-block button_style">Submit Reservation</button>
                         </div>
                     </form>
-                    <script>
+                   <script>
                         var today = new Date();
                         var dd = today.getDate() + 1;
                         var mm = today.getMonth() + 1; //January is 0!
