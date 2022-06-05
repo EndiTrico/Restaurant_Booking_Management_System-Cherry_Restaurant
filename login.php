@@ -13,7 +13,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && ($_POST['role'])) {
 		$email = $_POST['email'];
 		$password = $_POST['password'];
 
-		if ($role = 'Admin') {
+		if ($role == 'Admin') {
 			if (validateLogin($role, $email, $password)) {
 				//start the session and register a variable
 				// the user id and password match,
@@ -27,7 +27,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && ($_POST['role'])) {
 			}
 		}
 
-		if ($role = 'User') {
+		if ($role == 'User') {
 			if (validateLogin($role, $email, $password)) {
 				//start the session and register a variable
 				// the user id and password match,

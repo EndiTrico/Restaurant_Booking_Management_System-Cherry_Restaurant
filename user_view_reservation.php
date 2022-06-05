@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-    
+
     <?php
     //rolos pelati
     $userid = "SELECT User_ID FROM users where Email = '" . $_SESSION['email'] . "' ";
@@ -75,12 +75,12 @@
                     <td>" . $row[1] . "</td>
                     <td>" . $row[2] . "</td>
                     <td>" . $row[3] . "</td>
-                      <td>" . $row[4] . "</td>
-                      <td>" . $row[5] . "</td>
-                      <td>" . $row[6] . "</td>
-                      <td>" . $row[7] . "</td>
-                      <td><textarea readonly>" . $row[8] . "</textarea></td>
-                      <td class='table-danger'><button type='submit' name='delete-submit' class='btn btn-danger btn-sm'>Cancel</button></td>
+                    <td>" . $row[4] . "</td>
+                    <td>" . $row[5] . "</td>
+                    <td>" . $row[6] . "</td>
+                    <td>" . $row[7] . "</td>
+                    <td><textarea readonly>" . $row[8] . "</textarea></td>
+                    <td class='table-danger'><button type='submit' name='delete-submit' class='btn btn-danger btn-sm' id='cancel reservation'>Cancel</button></td>
                     </tr>
               ";
         }
