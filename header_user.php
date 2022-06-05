@@ -10,6 +10,7 @@
         <li><a href="user_reservation.php">Reservation</a></li>
         <li><a href="user_profile.php">Profile</a></li>
         <li><a href="logout.php">Log Out</a></li>
+        <li><a href="user_view_reservation2.php">Profile</a></li>
     </ul>
     
 </nav>
