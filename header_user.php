@@ -9,6 +9,7 @@
         <li><a href="user_contact.php">Contact Us</a></li>
         <li><a href="user_reservation.php">Reservation</a></li>
         <li><a href="user_profile.php">Profile</a></li>
+        <li><a href="logout.php">Log Out</a></li>
     </ul>
     
 </nav>
