@@ -11,6 +11,7 @@
         <li><a href="user_view_reservation.php">Show Reservation</a></li>
         <li><a href="user_profile.php">Profile</a></li>
         <li><a href="logout.php">Log Out</a></li>
+
     </ul>
-    
+
 </nav>
