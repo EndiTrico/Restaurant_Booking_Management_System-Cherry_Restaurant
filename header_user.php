@@ -8,7 +8,7 @@
         <li><a href="user_gallery.php">Gallery</a></li>
         <li><a href="user_contact.php">Contact Us</a></li>
         <li><a href="user_reservation.php">Reservation</a></li>
-        <li><a href="user_profile.php">Profile</a></li>
+        <li><a href="user_view_reservation2.php">Profile</a></li>
     </ul>
     
 </nav>
