@@ -3,6 +3,7 @@ session_start();
 include 'database/config.php';
 include 'database/opendb.php';
 $errorMessage = '';
+$successfulMessage = '';
 
 // check not NULL
 if (
@@ -21,6 +22,8 @@ if (
 
         $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, Comments, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . "','" . $_POST['comments'] . "','" . $row[0] . "')";
         $result = mysqli_query($conn, $mql);
+
+        $successfulMessage = "You reservation request is completed";
     } else if (
         !empty($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['date']) &&
         !empty($_POST['time'])  && !empty($_POST['num_guests']) && !empty($_POST['telephone'])  && empty($_POST['comments'])
@@ -31,8 +34,9 @@ if (
 
         $mql = "INSERT INTO reservation(First_Name, Last_Name, Date, Time, Number_of_Guests, Telephone_Number, User_ID) VALUES('" . $_POST['first_name'] . "','" . $_POST['last_name'] . "','" . $_POST['date'] .  "','" . $_POST['time'] . "','" . $_POST['num_guests'] . "','" . $_POST['telephone'] . "','"  . $row[0] . "')";
         $result = mysqli_query($conn, $mql);
+        $successfulMessage = "Y";
     } else {
-        $errorMessage = 'Required fields missing!';
+        $errorMessage = 'N';
     }
 }
 
@@ -65,6 +69,39 @@ if (
                 <div class="col-md-12">
                     <h1 class="page_title">Fill out the form <br>to book your table now!</h1>
                     <form action="<?php print($_SERVER['PHP_SELF']); ?>" method="POST">
+                        <?php
+                        if ($errorMessage != '') {
+                        ?>
+
+                            <div class="errorMessage">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2 style="color: white; text-align: center; margin-top: 20px; background-color:brown; border-style: outset; border-color: white;">You reservation request cannot be completed! </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        if ($successfulMessage != '') {
+                        ?>
+                            <div class="successfulMessage">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2 style="color: white; text-align: center; margin-top: 20px; background-color:brown; border-style: outset; border-color: white;">You reservation request is completed!</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <?php
+                        }
+                        ?>
                         <div class="form-group">
                             <label class="fname_style">First Name</label>
                             <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
@@ -109,6 +146,7 @@ if (
                             <label class="info_style">Enter extra Comments</label>
                             <textarea class="form-control" name="comments" placeholder="Comments" rows="3"></textarea>
                         </div>
+
                         <div class="form-group">
                             <button type="submit" name="reserv-submit" class="btn btn-dark btn-lg btn-block button_style">Submit Reservation</button>
                         </div>

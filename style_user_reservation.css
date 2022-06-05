@@ -129,3 +129,16 @@ li a:visited {
 	background: linear-gradient(#5e914e 0%, #113a04 100%);
 	margin-bottom: -65px;
 }
+
+.errorMessage{
+	font-weight: bold;
+	font-size: 20px;
+	color: red;
+    margin-bottom: 20px;
+}
+
+h2 .successful{
+	font-weight: bold;
+	font-size: 20px;
+	color: red;
+}
