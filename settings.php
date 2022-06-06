@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="style_options.css">
 
-	<title>Cherry Restaurant | Reservation</title>
+	<title>Cherry Restaurant | Settings</title>
 </head>
 
 <body>
