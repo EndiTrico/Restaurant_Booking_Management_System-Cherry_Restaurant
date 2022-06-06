@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Show Reservation by Username</h2>
+                    <h3 class="h3_text" style="margin-top:15px;">Show Reservation by Username</h3>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
                 <div class="col-md-12">
                     <form action="<?php print($_SERVER['PHP_SELF']); ?>" method="post">
                         <div class="form-group">
-                            <label class="info_style">Enter Username</label>
+                            <label style="font-family: Verdana;font-weight: bold;">Enter Username</label>
                             <input type="text" class="form-control" name="username" id="username" placeholder="Username" required="required">
                         </div>
                         <div class="form-group">
