@@ -34,7 +34,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && ($_POST['role'])) {
 				// set the session
 				$_SESSION['email'] = $email;
 
-				header('Location: user_reservation.php');
+				header('Location: reservation.php');
 				exit();
 			} else {
 				$errorMessage = 'Error: Wrong Username or password or role!';
