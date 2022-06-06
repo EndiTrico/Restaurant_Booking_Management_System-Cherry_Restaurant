@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Show Reservation by Date</h2>
+                    <h3 class="h3_text" style="margin-top:15px;">Show Reservation by Date</h3>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
                 <div class="col-md-12">
                     <form action="<?php print($_SERVER['PHP_SELF']); ?>" method="post">
                         <div class="form-group">
-                            <label class="info_style">Enter Date</label>
+                            <label style="font-family: Verdana;font-weight: bold;">Enter Date</label>
                             <input type="date" class="form-control" name="date" id="date" placeholder="Date" required="required">
                         </div>
                         <div class="form-group">
