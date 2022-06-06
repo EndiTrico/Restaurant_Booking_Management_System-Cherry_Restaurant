@@ -38,7 +38,7 @@
                             <li><span class="span_black">Phone number: </span>+355 69 57 12 565</li><br>
                             <li><span class="span_black">Email: </span>cherryrestaurant_vila@gmail.com</li><br>
                         </ul>
-                        <h3 class="reservation_h3"><a href="user_reservation.php">Reservation</a></h3>
+                        <h3 class="reservation_h3"><a href="reservation.php">Reservation</a></h3>
                     </section>
                 </div>
 
@@ -60,7 +60,7 @@
                             <li><span class="span_black">Phone number: </span>+355 69 57 12 852</li><br>
                             <li><span class="span_black">Email: </span>cherryrestaurant_bllok@gmail.com</li><br>
                         </ul>
-                        <h3 class="reservation_h3"><a href="user_reservation.php">Reservation</a></h3>
+                        <h3 class="reservation_h3"><a href="reservation.php">Reservation</a></h3>
                     </section>
                 </div>
             </div>
