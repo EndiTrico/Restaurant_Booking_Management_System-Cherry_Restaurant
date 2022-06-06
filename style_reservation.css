@@ -206,3 +206,8 @@ li a:visited {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+.options{
+    font-weight:bold; 
+    text-align: center;
+}

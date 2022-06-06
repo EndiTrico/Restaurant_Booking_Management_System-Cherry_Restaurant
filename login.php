@@ -2,8 +2,6 @@
 // start the session
 session_start();
 include_once 'validate.php';
-include 'database/opendb.php';
-include 'database/opendb.php';
 
 $errorMessage = '';
 
