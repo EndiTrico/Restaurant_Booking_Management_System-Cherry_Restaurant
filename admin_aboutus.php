@@ -16,7 +16,7 @@
     <?php include "header_admin.php"; ?>
 
     <div>
-        <img class="photo" src="./Images/Images_aboutus/photo5.jpg">
+        <img class="photo" src="./Images/Images_aboutus/photo5.jpg" alt="photo_aboutus">
         <h1 class="aboutus_text">About Us</h1>
     </div>
 
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="col-md-6" style="margin-right: -100px;">
-                    <img src="./Images/Images_aboutus/photo6.png">
+                    <img src="./Images/Images_aboutus/photo6.png" alt="openinghours_photo">
                     <h3>Opening Hours:</h3><br>
                     <p>Monday................................................9:00 AM - 12:00 AM</p>
                     <p>Tuesday................................................9:00 AM - 12:00 AM</p>
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <img class="story1_img" src="./Images/Images_aboutus/photo1.jpg">
+                    <img class="story1_img" src="./Images/Images_aboutus/photo1.jpg" alt="staff_photo">
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
         <div class="container reveal">
             <div class="row">
                 <div class="col-md-6">
-                    <img class="story2_img" src="./Images/Images_aboutus/photo2.jpg">
+                    <img class="story2_img" src="./Images/Images_aboutus/photo2.jpg" alt="staff_photo">
                 </div>
 
                 <div class="col-md-6">
