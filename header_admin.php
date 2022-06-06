@@ -3,10 +3,10 @@
 
     <ul>
         <li><a href="admin_index.php">Home</a></li>
-        <li><a href="admin_aboutus.php">About Us</a></li>
-        <li><a href="admin_reservation_username.php">Username</a></li>
-        <li><a href="admin_reservation_date.php">Date</a></li>
-        <li><a href="admin_show_all_reservation.php">Show Reservation</a></li>
+        <li><a href="admin_show_all_users.php">All Users</a></li>
+        <li><a href="admin_reservation_username.php">Reservation by Username</a></li>
+        <li><a href="admin_reservation_date.php">Reservation by Date</a></li>
+        <li><a href="admin_show_all_reservation.php">All Reservations</a></li>
         <li><a href="logout.php">Log Out</a></li>
     </ul>
 
