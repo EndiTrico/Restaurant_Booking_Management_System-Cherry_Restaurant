@@ -28,9 +28,9 @@
 				<br>
 				<p style="font-weight:bold; text-align: center; ">What do you want to do?</p><br>
 			</div>
-			<h4 class="reservation" style="text-align: center;"><a id= "booking" href="user_reservation.php" style="padding-left: 60px !important; padding-right: 60px !important; color: white; margin-top: 5px;
+			<h4 class="reservation" style="text-align: center;"><a id="booking" href="user_reservation.php" style=" color: white; margin-top: 5px;
     padding: 10px 10px; background-color: brown !important; text-decoration: none; border-radius: 50px" onmouseover="myfunctionover()" onmouseout="myfunctionout()">Book a Table</a></h4><br><br>
-			<h4 class="reservation" style="text-align: center;"><a id="viewReservation" href="user_view_reservation.php" style="padding-left: 10px !important; padding-right: 10px !important; color: white; margin-top: 5px;
+			<h4 class="reservation" style="text-align: center;"><a id="viewReservation" href="user_view_reservation.php" style="color: white; margin-top: 5px;
     padding: 10px 10px; background-color: brown !important; text-decoration: none; border-radius: 50px" onmouseover="myfunctionover1()" onmouseout="myfunctionout1()">Show Reservations</a></h4>
 		</div>
 	</div>
@@ -51,8 +51,6 @@
 		function myfunctionout1() {
 			document.getElementById("viewReservation").style.backgroundColor = "brown";
 		}
-
-
 	</script>
 
 </body>
