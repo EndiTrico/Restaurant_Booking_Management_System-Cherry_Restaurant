@@ -28,9 +28,9 @@
 				<br>
 				<p style="font-weight:bold; text-align: center; ">What do you want to do?</p><br>
 			</div>
-			<h4 class="reservation" style="text-align: center;"><a id="logout" href="logout.php" style="padding-left: 90px !important; padding-right: 90px !important; color: white; margin-top: 5px;
+			<h4 class="reservation" style="text-align: center;"><a id="logout" href="logout.php" style="padding-left: 80px !important; padding-right: 80px !important; color: white; margin-top: 5px;
     padding: 10px 10px; background-color: brown !important; text-decoration: none; border-radius: 50px" onmouseover="myfunctionover()" onmouseout="myfunctionout()">Log Out</a></h4><br><br>
-			<h4 class="reservation" style="text-align: center;"><a id="deleteAcc" href="user_view_reservation.php" style="padding-left: 30px !important; padding-right: 30px !important; color: white; margin-top: 5px;
+			<h4 class="reservation" style="text-align: center;"><a id="deleteAcc" href="user_view_reservation.php" style="padding-left: 20px !important; padding-right: 20px !important; color: white; margin-top: 5px;
     padding: 10px 10px; background-color: brown !important; text-decoration: none; border-radius: 50px" onmouseover="myfunctionover1()" onmouseout="myfunctionout1()">Delete My Account</a></h4>
 		</div>
 	</div>
