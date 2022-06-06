@@ -33,7 +33,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="h3_text">All Reservations</h2>
+                    <h2 class="h3_text">All Users</h2>
                 </div>
             </div>
         </div>
