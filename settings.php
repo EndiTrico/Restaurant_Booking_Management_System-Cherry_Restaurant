@@ -23,7 +23,7 @@
 
 	<div class="container1">
 		<div id="loginFormContainer">
-			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Reservation</p>
+			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Settings</p>
 			<div>
 				<br>
 				<p style="font-weight:bold; text-align: center; ">What do you want to do?</p><br>
