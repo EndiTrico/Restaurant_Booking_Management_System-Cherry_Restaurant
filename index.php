@@ -37,9 +37,6 @@
             <div class="figure_div">
                 <img class="carousel_images" src="./Images/photo6.png">
             </div>
-            <div class="figure_div">
-                <img class="carousel_images" src="./Images/photo16.png">
-            </div>
         </figure>
 
     </div>

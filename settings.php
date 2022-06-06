@@ -20,7 +20,6 @@
 <body>
 	<?php include "header_user.php"; ?>
 
-
 	<div class="container1">
 		<div id="loginFormContainer">
 			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Settings</p>
