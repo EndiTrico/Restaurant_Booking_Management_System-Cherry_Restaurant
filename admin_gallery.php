@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<?php include "header_admin.php"; ?>
+    <?php include "header_admin.php"; ?>
 
     <div>
         <img class="main_photo" src="./Images/Images_Gallery/photo1.png" alt="Main Photo Gallery">

@@ -19,7 +19,7 @@
 </head>
 
 <body>
-<?php include "header_admin.php"; ?>
+    <?php include "header_admin.php"; ?>
 
 
     <div class="slider">
@@ -105,7 +105,7 @@
         </div>
     </div>
 
-	<?php include "footer.php"; ?>    
+    <?php include "footer.php"; ?>
 
 </body>
 

@@ -18,7 +18,7 @@
     <?php include "header.php"; ?>
 
     <div>
-        <img class="main_photo" src="./Images/Images_Gallery/photo1.png" alt="Main Photo Gallery">
+        <img class="main_photo" style="margin-top: 80px;" src="./Images/Images_Gallery/photo1.png" alt="Main Photo Gallery">
         <img class="main_photo2" src="./Images/Images_Gallery/photo2.png" alt="Second Photo Gallery">
         <h1 class="gallery_text">Gallery</h1>
     </div>

@@ -3,7 +3,7 @@
 <html>
 
 <head>
-<link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
+    <link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="style_admin_date.css">
 
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<?php include "header_admin.php"; ?>
+    <?php include "header_admin.php"; ?>
 
     <div class="reservation_date">
         <div class="container">
@@ -103,8 +103,6 @@ if (
             }
             echo '</tbody></table>            </div>
             ';
-
-
         } else {
             echo "<p class='text-white text-center bg-danger' style='margin-top: 100px'>The reservation list is empty!<p>";
         }

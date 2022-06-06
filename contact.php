@@ -22,8 +22,8 @@
     <?php include "header.php"; ?>
 
     <div>
-        <img class="main_photo" src="./Images/Images_Contact/photo1.png" alt="Photo Contact">
-        <img class="main_burgerphoto" src="./Images/Images_Contact/photo2.png" alt="Burger">
+        <img class="main_photo" style="margin-top: 80px;" src="./Images/Images_Contact/photo1.png" alt="Photo Contact">
+        <img class="main_burgerphoto" style="	margin-top: -328px;" src="./Images/Images_Contact/photo2.png" alt="Burger">
         <h1 class="contactus_text">Contact Us</h1>
     </div>
 

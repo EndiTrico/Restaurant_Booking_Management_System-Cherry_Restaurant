@@ -12,7 +12,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style_options.css">
+	<link rel="stylesheet" href="style_options.css">
 
 	<title>Cherry Restaurant | Reservation</title>
 </head>
@@ -23,12 +23,16 @@
 
 	<div class="container1">
 		<div id="loginFormContainer">
-				<p class="login-text" style="font-size: 2rem; font-weight: 800;">Reservation</p>
-				<div>
-					<label style="font-weight:bold;">What do you want to do?</label>
-				</div>
-                <h3 class="reservation"><a href="user_reservation.php">Book a Table</a></h3>
-                <h3 class="reservation"><a href="user_view_reservation.php">Show My Reservations</a></h3>
+			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Reservation</p>
+			<div>
+				<p style="font-weight:bold; text-align: center; ">What do you want to do?</p>
+			</div>
+			<button type="submit" class="btn btn-dark btn-lg btn-block button_style"> <h3 class="reservation"><a href="user_reservation.php">Book a Table</a></h3></button>
+			<button type="submit" class="btn btn-dark btn-lg btn-block button_style"> <h3 class="reservation"><a href="user_view_reservation.php">Show My Reservations</a></h3></button>
+
+		</div>
+	</div>
+
 </body>
 
 </html>

@@ -11,7 +11,6 @@ if (isset($_GET['Reservation_ID'])) {
     $date = "SELECT * FROM reservation Where Reservation_ID = " . $id . " AND DATE > CURRENT_TIMESTAMP";
 
     $result1 = mysqli_query($conn, $date);
-
     $numrows = mysqli_num_rows($result1);
 
     if ($numrows > 0) {
