@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Show the Reservation by Date</h2>
+                    <h2>Show Reservation by Username</h2>
                 </div>
             </div>
         </div>
