@@ -3,9 +3,10 @@
 <html>
 
 <head>
+
     <link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-    <link rel="stylesheet" href="style_admin_date.css">
+    <link rel="stylesheet" href="style_admin_username.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -65,20 +66,20 @@ if (
     ) {
         $user_ID = "SELECT User_ID FROM users where Username = '" . $_POST['username'] . "' ";
         $result1 = mysqli_query($conn, $user_ID);
+        $result11 = mysqli_fetch_array($result1);
 
-
-        if (mysqli_num_rows($result1) < 0) {
+        if (mysqli_num_rows($result1) == 0) {
             echo '<script type="text/javascript">';
             echo 'alert("There is no user with that username")';  //not showing an alert box.
             echo '</script>';
         } else {
 
 
-                $theReservation = "SELECT * FROM reservation where User_ID = " . $result1;
-                $result2 = mysqli_query($conn, $theReservation);
+            $theReservation = "SELECT * FROM reservation where User_ID = " . $result11[0] . ";";
+            $result2 = mysqli_query($conn, $theReservation);
 
-                echo
-                '
+            echo
+            '
             <div style = "margin-top: 100px;">
             
                 <table class="table table-hover table-responsive-sm text-center showreservation">
@@ -94,8 +95,8 @@ if (
                             <th scope="col" class="header_style">Comments</th>
                         </tr>
                     </thead> <tbody>';
-                while ($row = mysqli_fetch_assoc($result22)) {
-                    echo "
+            while ($row = mysqli_fetch_assoc($result2)) {
+                echo "
                         <tr>
                         <input name='reserv_id' type='hidden' value=" . $row['Reservation_ID'] . ">
                         <td>" . $row['First_Name'] . "</td>
@@ -108,9 +109,9 @@ if (
                         <td><textarea readonly>" . $row['Comments'] . "</textarea></td>
                         </tr>
                   ";
-                
-                echo '</tbody></table></div>';
-            } 
+            }
+            echo '</tbody></table>            </div>
+            ';
         }
     } else {
         echo "<p class='text-white text-center bg-danger' style='margin-top: 100px'>The reservation list is empty!<p>";
