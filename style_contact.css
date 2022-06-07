@@ -111,7 +111,7 @@ li a:visited {
 	color: brown;
 	text-align: center;
 	z-index: 5;
-	margin-top: -190px;
+	margin-top: -200px;
 }
 
 .main_photo {
@@ -123,6 +123,7 @@ li a:visited {
 .main_burgerphoto {
 	z-index: 1;
 	margin-left: 1020px;
+	margin-top: -350px;
 }
 
 .black_background {
