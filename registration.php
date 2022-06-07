@@ -80,7 +80,7 @@ if (isset($_POST['submit'])) //if submit button is pressed)
 				<input type="password" placeholder="Confirm Password" name="cpassword" value="" required>
 			</div>
 			<div class="input-group">
-				<button name="submit" class="btn">Register</button>
+				<button name="submit" class="btn" style="font-family:Verdana;font-weight:bold;">Register</button>
 			</div>
 			<p class="login-register-text">Have an account? <a href="login.php">Login Here</a>.</p>
 		</form>

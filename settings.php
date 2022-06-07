@@ -28,16 +28,16 @@
 				<br>
 				<p style="font-weight:bold; text-align: center; ">What do you want to do?</p><br>
 			</div>
-			<h4 class="reservation" style="text-align: center;"><a id="logout" href="logout.php" style="padding-left: 90px !important; padding-right: 90px !important; color: white; margin-top: 5px;
+			<h4 style="text-align: center;font-family:Verdana;font-weight:bold;"><a id="logout" href="logout.php" style="padding-left: 90px !important; padding-right: 90px !important; color: white; margin-top: 5px;
     padding: 10px 10px; background-color: brown !important; text-decoration: none; border-radius: 50px" onmouseover="myfunctionover()" onmouseout="myfunctionout()">Log Out</a></h4><br><br>
-			<h4 class="reservation" style="text-align: center;"><a id="deleteAcc" href="user_delete_account.php" style="padding-left: 30px !important; padding-right: 30px !important; color: white; margin-top: 5px;
+			<h4 style="text-align: center;font-family:Verdana;font-weight:bold;"><a id="deleteAcc" href="user_delete_account.php" style="padding-left: 30px !important; padding-right: 30px !important; color: white; margin-top: 5px;
     padding: 10px 10px; background-color: brown !important; text-decoration: none; border-radius: 50px" onmouseover="myfunctionover1()" onmouseout="myfunctionout1()">Delete My Account</a></h4>
 		</div>
 	</div>
 
 	<script>
 		function myfunctionover() {
-			document.getElementById("logout").style.backgroundColor = "#c2d59c";
+			document.getElementById("logout").style.backgroundColor = "#899160";
 		}
 
 		function myfunctionout() {
@@ -45,7 +45,7 @@
 		}
 
 		function myfunctionover1() {
-			document.getElementById("deleteAcc").style.backgroundColor = "#c2d59c";
+			document.getElementById("deleteAcc").style.backgroundColor = "#899160";
 		}
 
 		function myfunctionout1() {

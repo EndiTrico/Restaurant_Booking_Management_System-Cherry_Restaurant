@@ -99,7 +99,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && ($_POST['role'])) {
 				}
 				?>
 				<div class="input-group">
-					<button name="submit" class="btn">Login</button>
+					<button name="submit" class="btn" style="font-family:Verdana;font-weight:bold;">Login</button>
 				</div>
 				<p class="login-register-text">Don't have an account? <a href="registration.php">Register Here</a>.</p>
 			</form>

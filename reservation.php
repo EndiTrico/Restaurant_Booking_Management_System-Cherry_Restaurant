@@ -28,16 +28,16 @@
 				<br>
 				<p style="font-weight:bold; text-align: center; ">What do you want to do?</p><br>
 			</div>
-			<h4  style="text-align: center;"><a id= "booking" href="user_reservation.php" style="padding-left: 90px !important; padding-right: 90px !important; color: white; margin-top: 5px;
+			<h4  style="text-align: center;font-family:Verdana;font-weight:bold;"><a id= "booking" href="user_reservation.php" style="padding-left: 90px !important; padding-right: 90px !important; color: white; margin-top: 5px;
     padding: 10px 10px; background-color: brown !important; text-decoration: none; border-radius: 50px" onmouseover="myfunctionover()" onmouseout="myfunctionout()">Book a Table</a></h4><br><br>
-			<h4  style="text-align: center;"><a id="viewReservation" href="user_view_reservation.php" style="padding-left: 30px !important; padding-right: 30px !important; color: white; margin-top: 5px;
+			<h4  style="text-align: center;font-family:Verdana;font-weight:bold;"><a id="viewReservation" href="user_view_reservation.php" style="padding-left: 30px !important; padding-right: 30px !important; color: white; margin-top: 5px;
     padding: 10px 10px; background-color: brown !important; text-decoration: none; border-radius: 50px" onmouseover="myfunctionover1()" onmouseout="myfunctionout1()">Show My Reservations</a></h4>
 		</div>
 	</div>
 
 	<script>
 		function myfunctionover() {
-			document.getElementById("booking").style.backgroundColor = "#c2d59c";
+			document.getElementById("booking").style.backgroundColor = "#899160";
 		}
 
 		function myfunctionout() {
@@ -45,7 +45,7 @@
 		}
 
 		function myfunctionover1() {
-			document.getElementById("viewReservation").style.backgroundColor = "#c2d59c";
+			document.getElementById("viewReservation").style.backgroundColor = "#899160";
 		}
 
 		function myfunctionout1() {
