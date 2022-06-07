@@ -105,11 +105,11 @@ if (
             echo '</tbody></table>            </div>
             ';
         } else {
-            echo "<p class='text-white text-center bg-danger' style='margin-top: 100px'>The reservation list is empty!<p>";
-        }
-    } else {
-        echo "<p class='text-white text-center bg-danger' style='margin-top: 100px'>The reservation list is empty!<p>";
-    }
+            echo '<script type="text/javascript">';
+            echo 'alert("There are no reservations on this date!")';
+            echo '</script>';
+       }
+    } 
 }
 
 ?>

@@ -37,8 +37,11 @@
                 <div class="col-md-12">
                     <form action="<?php print($_SERVER['PHP_SELF']); ?>" method="post">
                         <div class="form-group">
-                            <label style="font-family: Verdana;font-weight: bold;">Enter Username</label>
-                            <input type="text" class="form-control" name="username" id="username" placeholder="Username" required="required">
+                            <label class="info_style">Enter Location</label>
+                            <select class="form-control" name="location">
+                                <option>Cherry Restaurant Villa</option>
+                                <option>Cherry Restaurant Bllok</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <button type="submit" name="reserv-submit" class="btn btn-dark btn-lg btn-block button_style">Submit</button>
@@ -60,33 +63,22 @@ include 'database/opendb.php';
 
 // check not NULL
 if (
-    isset($_POST['username'])
+    isset($_POST['location'])
 ) {
     // check that values are not empty string, 0, or false
     if (
-        !empty($_POST['username'])
+        !empty($_POST['location'])
     ) {
-        $user_ID = "SELECT User_ID FROM users where Username = '" . $_POST['username'] . "' ";
-        $result1 = mysqli_query($conn, $user_ID);
-        $result11 = mysqli_fetch_array($result1);
+        $allReservation = "SELECT * FROM reservation where Location = '" . $_POST['location'] . "' ";
+        $result1 = mysqli_query($conn, $allReservation);
 
         if (mysqli_num_rows($result1) == 0) {
             echo '<script type="text/javascript">';
-            echo 'alert("There is no user with that username!")';
+            echo 'alert("There are no reservation in this location!")';
             echo '</script>';
         } else {
-
-
-            $theReservation = "SELECT * FROM reservation where User_ID = " . $result11[0] . ";";
-            $result2 = mysqli_query($conn, $theReservation);
-
-            if (mysqli_num_rows($result2) == 0) {
-                echo '<script type="text/javascript">';
-                echo 'alert("The user has not make any reservation!")';
-                echo '</script>';
-            } else {
-                echo
-                '
+            echo
+            '
             <div style = "margin-top: 100px;">
             
                 <table class="table table-hover table-responsive-sm text-center showreservation">
@@ -102,8 +94,8 @@ if (
                             <th scope="col" class="header_style">Comments</th>
                         </tr>
                     </thead> <tbody>';
-                while ($row = mysqli_fetch_assoc($result2)) {
-                    echo "
+            while ($row = mysqli_fetch_assoc($result1)) {
+                echo "
                         <tr>
                         <input name='reserv_id' type='hidden' value=" . $row['Reservation_ID'] . ">
                         <td>" . $row['First_Name'] . "</td>
@@ -116,10 +108,9 @@ if (
                         <td><textarea readonly>" . $row['Comments'] . "</textarea></td>
                         </tr>
                   ";
-                }
-                echo '</tbody></table>            </div>
-            ';
             }
+            echo '</tbody></table>            </div>
+            ';
         }
     }
 }

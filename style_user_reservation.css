@@ -138,7 +138,7 @@ li a:visited {
     margin-bottom: 20px;
 }
 
-h2 .successful{
+.successful{
 	font-weight: bold;
 	font-size: 20px;
 	color: red;

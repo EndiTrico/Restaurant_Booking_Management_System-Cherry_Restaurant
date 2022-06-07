@@ -112,8 +112,12 @@ if (isset($_GET['Reservation_ID'])) {
         }
         echo "</tbody></table>";
     } else {
-        echo "<p class='text-white text-center bg-danger'>Your reservation list is empty!<p>";
+        
+            echo '<script type="text/javascript">';
+            echo 'alert("You have not make any reservation!")';
+            echo '</script>';
     }
+
 ?>
 </body>
 </html>

@@ -20,7 +20,7 @@ if (isset($_POST['email']) && isset($_POST['password']) && ($_POST['role'])) {
 				// set the session
 				$_SESSION['email'] = $email;
 
-				header('Location: admin_index.php');
+				header('Location: admin_show_location.php');
 				exit();
 			} else {
 				$errorMessage = 'Error: Wrong Username or password or role!';

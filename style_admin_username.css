@@ -95,3 +95,10 @@ li a:visited {
 .reservation_date{
 	padding-top: 100px;
 }
+
+.errorMessage h2{
+	font-weight: bold;
+	font-size: 30px;
+	color: red;
+	margin-top: 100px !important;
+}

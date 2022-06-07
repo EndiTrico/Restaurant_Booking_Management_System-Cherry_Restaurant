@@ -80,3 +80,9 @@ li a:visited {
 	font-family: Verdana;
 	font-size: 15px;
 }
+
+.errorMessage h2{
+	font-weight: bold;
+	font-size: 30px;
+	color: red;
+}

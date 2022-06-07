@@ -71,7 +71,9 @@
         }
         echo "</tbody></table>";
     } else {
-        echo "<p class='text-white text-center bg-danger'>The reservation list is empty!<p>";
+        echo '<script type="text/javascript">';
+        echo 'alert("There are no users registered!")';
+        echo '</script>';
     }
     ?>
 </body>

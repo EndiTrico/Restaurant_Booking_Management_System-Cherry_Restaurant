@@ -91,3 +91,10 @@ li a:visited {
 	background: linear-gradient(#5e914e 0%, #113a04 100%);
 	margin-bottom: -65px;
 }
+
+.errorMessage h2{
+	font-weight: bold;
+	font-size: 30px;
+	color: red;
+	margin-top: 100px !important;
+}
