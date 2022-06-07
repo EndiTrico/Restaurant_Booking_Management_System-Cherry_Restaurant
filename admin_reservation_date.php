@@ -4,6 +4,7 @@
 
 <head>
     <link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
+    <link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="style_admin_date.css">
 
@@ -108,8 +109,8 @@ if (
             echo '<script type="text/javascript">';
             echo 'alert("There are no reservations on this date!")';
             echo '</script>';
-       }
-    } 
+        }
+    }
 }
 
 ?>

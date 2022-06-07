@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
     <link rel="stylesheet" href="style_admin_show_all_reservation.css">
     <link rel="icon" type="image/png" href="./images/restaurant_logoo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
