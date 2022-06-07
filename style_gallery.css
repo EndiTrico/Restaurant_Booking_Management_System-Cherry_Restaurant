@@ -106,7 +106,8 @@ li a:visited {
 }
 
 .gallery_text {
-	font-family: Verdana;
+	font-family: "Cookie";
+	font-size: 65px;
 	font-weight: bold;
 	color: brown;
 	text-align: center;

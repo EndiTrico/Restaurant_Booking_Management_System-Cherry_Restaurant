@@ -72,7 +72,8 @@ li a:visited {
 }
 
 .aboutus_text {
-	font-family: Verdana;
+	font-family: "Cookie";
+	font-size: 75px;
 	font-weight: bold;
 	color: brown;
 	text-align: center;

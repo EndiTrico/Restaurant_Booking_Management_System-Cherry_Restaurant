@@ -106,12 +106,13 @@ li a:visited {
 }
 
 .contactus_text {
-	font-family: Verdana;
+	font-family: "Cookie";
+	font-size: 65px;
 	font-weight: bold;
 	color: brown;
 	text-align: center;
 	z-index: 5;
-	margin-top: -200px;
+	margin-top: -220px;
 }
 
 .main_photo {
