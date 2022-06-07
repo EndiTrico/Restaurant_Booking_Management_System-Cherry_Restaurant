@@ -1,0 +1,193 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-color: white !important;
+}
+
+nav {
+	background: whitesmoke;
+	text-align: right;
+	height: 80px;
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-top: 30px;
+	text-decoration: none;
+}
+
+nav ul li a {
+	list-style: none !important;
+	text-decoration: none !important;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 80px;
+	padding-bottom: 27px;
+	color: brown;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 17px;
+}
+
+li a:hover {
+	background: linear-gradient(#e9a092 0%, brown 100%);
+	color: whitesmoke !important;
+	text-decoration: none;
+	z-index: 10;
+}
+
+li a:link {
+	text-decoration: none;
+	color: brown;
+}
+
+li a:visited {
+	text-decoration: none;
+	color: brown;
+}
+
+.logo {
+	float: left;
+	width: auto;
+	height: 75px;
+	margin-left: 40px;
+}
+
+.footer {
+	background-color: #ba3a3a;
+	margin-top: 170px;
+}
+
+.footer ul li {
+	color: white;
+}
+
+.footer_text {
+	font-family: Verdana;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: -10px;
+	text-align: center;
+}
+
+.footer_text_middle {
+	font-family: Verdana;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: -10px;
+	text-align: center;
+}
+
+.footer_icons {
+	padding-left: 79px;
+}
+
+.myicons {
+	padding-left: 20px;
+}
+
+.span_icon {
+	font-weight: bold;
+}
+
+.contact_text{
+	font-family: Verdana;
+	font-size: 14px;
+}
+
+.contactus_text {
+	font-family: Verdana;
+	font-weight: bold;
+	color: brown;
+	text-align: center;
+	z-index: 5;
+	margin-top: -190px;
+}
+
+.main_photo {
+	z-index: -1;
+	width: 100%;
+	height: 350px;
+}
+
+.main_burgerphoto {
+	z-index: 1;
+	margin-left: 1020px;
+	margin-top: -240px;
+}
+
+.black_background {
+	margin-left: -45px;
+	margin-top: 220px;
+	width: 130%;
+	height: 500px;
+}
+
+.black_text {
+	font-family: "Cookie";
+	color: white;
+	font-weight: bold;
+	margin-top: -440px;
+	margin-left: -10px;
+	text-align: center;
+	font-size: 50px;
+}
+
+.contacts_img ul li {
+	color: white;
+}
+
+.span_black {
+	font-weight: bold;
+	color: white;
+}
+
+.reservation_h3 a {
+	box-shadow: inset 2 2 2 2 white;
+	color: white;
+	padding: 0 .25rem;
+	margin: 0 -.25rem;
+	transition: color 1s ease-in-out, box-shadow 0.1s ease-in, box-shadow 1s ease-out;
+	margin-left: 90px;
+	font-family: Verdana;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 1.5;
+	text-decoration: none;
+	border-style: solid;
+}
+
+.reservation_h3 a:hover {
+	color: brown;
+	background-color: white;
+	box-shadow: inset 200px 0 0 0 white;
+	text-decoration: none;
+}
+
+#location1, #location2{
+	visibility: hidden;
+}
+
+.lottie{
+	margin-top: 300px;
+	margin-left: 38px;
+}
+
+.lottie h6{
+	font-style: italic;
+	font-size: 25px;
+	font-family: "Cookie";
+	color: black;
+	margin-top: -50px;
+	margin-left: 10px;
+}
