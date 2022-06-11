@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="h3_text" style="margin-top:15px;">Show Reservation by Date</h3>
+                    <h3 class="h3_text" style="margin-top:15px;">Show Reservations by Date</h3>
                 </div>
             </div>
         </div>
