@@ -1,6 +1,6 @@
 
 <nav>
-    <a href="index.html"> <img class="logo" src="./images/restaurant_logo.png"></a>
+    <img class="logo" src="./images/restaurant_logo.png">
 
     <ul>
         <li><a href="index.php">Home</a></li>
